@@ -53,8 +53,23 @@ form.wizard.container {
     padding: 0 0em;
   }
 
-  .tab_form {
-    background-color: $cor-principal;
-    padding: $margin $margin $margin  0px;
-    color: $cor-acesssoria;
-}
+ .topo_img{
+background-image: url("../img/formularios/question.png");
+    width: 327px;
+    height: 254px;
+
+ }
+
+ span.aproove {
+   background-image: url("../img/formularios/aprovado.png");
+      display: inline-block;
+    width: 50%;
+    height: 100px;
+ }
+
+ span.reject {
+background-image: url("../img/formularios/reprovado.png");
+     display: inline-block;
+    width: 50%;
+    height: 100px;
+ }

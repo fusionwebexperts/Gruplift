@@ -82,9 +82,21 @@ form.wizard.container {
   overflow: auto;
   padding: 0 0em; }
 
-.tab_form {
-  background-color: #1c87c3;
-  padding: 1em 1em 1em 0px;
-  color: #ffffff; }
+.topo_img {
+  background-image: url("../img/formularios/question.png");
+  width: 327px;
+  height: 254px; }
+
+span.aproove {
+  background-image: url("../img/formularios/aprovado.png");
+  display: inline-block;
+  width: 50%;
+  height: 100px; }
+
+span.reject {
+  background-image: url("../img/formularios/reprovado.png");
+  display: inline-block;
+  width: 50%;
+  height: 100px; }
 
 /*# sourceMappingURL=formularios.css.map */
