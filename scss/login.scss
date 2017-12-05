@@ -1,0 +1,19 @@
+@import 'stylesheet';
+
+/***Background COVER***/
+$background : url(../img/banner.jpg) no-repeat center center fixed ; 
+/**Geral**/
+body{
+    color:$cor-secundaria;
+    font-size: $smaller;
+}
+.fbg { 
+  background: $background; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:transparent !important;
+}
+
+

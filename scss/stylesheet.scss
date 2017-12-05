@@ -1,0 +1,80 @@
+
+/** CORES TEMA **/
+
+$cor-principal : #1c87c3;
+$cor-secundaria : #000000;
+$cor-acesssoria : #ffffff;  
+$hyperlink-cor : #0D537B; 
+
+/** TAMANHO DE FONT DO TEMA **/
+
+$larger : 24px ;
+$large : 20px ; 
+$medium : 16px;
+$small : 14px;
+$smaller : 12px;
+
+/** TIPO DE FONT DO TEMA **/
+
+$mainfont : 'Roboto', sans-serif;
+$secondaryfont : 'Roboto', sans-serif; ;
+
+  /**Titulos**/
+$aumento: 0.33333;
+  
+    @mixin heading-size($size) {
+        font-size: $size * $aumento + em;
+       }
+    h1 {
+        @include heading-size(6);
+    }
+    h2 {
+        @include heading-size(5);
+    }
+    h3 {
+        @include heading-size(4);
+    }
+    h4 {
+        @include heading-size(3);
+    }
+    h5 {
+        @include heading-size(2);
+    }
+    h6 {
+        @include heading-size(1);
+    }
+
+
+
+/*** Cores dos Links ***/
+
+    a {
+      color: $cor-principal;
+      &:visited {
+        color: $hyperlink-cor;
+      }
+      &:hover {
+        color: $hyperlink-cor;   
+      }
+      &:active {
+        color: $hyperlink-cor;
+      }
+    }
+  
+    .btn-primary {
+        background-color: $cor-principal !important;
+        color: $cor-acesssoria;
+        &:visited {
+        background-color: $hyperlink-cor !important;
+        color: $cor-acesssoria;
+        }
+        &:hover {
+        background-color: $hyperlink-cor !important;   
+        color: $cor-acesssoria;
+        }
+        &:active {
+        background-color: $hyperlink-cor !important;
+        color: $cor-acesssoria;
+        }
+      }
+

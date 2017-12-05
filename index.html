@@ -1,0 +1,689 @@
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap material admin template">
+    <meta name="author" content="">
+    
+    <title>Dashboard</title>
+    
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    
+    <!--  Fusion Estilos -->
+
+    <link rel="stylesheet" href="scss/dashboard.css">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="vendor/flag-icon-css/flag-icon.css">
+    <link rel="stylesheet" href="vendor/waves/waves.css">
+        <link rel="stylesheet" href="vendor/chartist/chartist.css">
+        <link rel="stylesheet" href="vendor/jvectormap/jquery-jvectormap.css">
+        <link rel="stylesheet" href="vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+        <link rel="stylesheet" href="assets/examples/css/dashboard/v1.css">
+    
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/material-design/material-design.min.css">
+    <link rel="stylesheet" href="fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <!-- Scripts -->
+    <script src="vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+  </head>
+  <body class="animsition dashboard">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon md-more" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <img class="navbar-brand-logo" src="img/logo.png" title="">
+        </div> 
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
+                data-animation="scale-up" role="button">
+                <span class="avatar avatar-online">
+                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span>
+                  <i></i>
+                </span>
+              </a>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Perfil</a>
+                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-settings" aria-hidden="true"></i> Definições</a>
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> Logout</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" title="Notifications"
+                aria-expanded="false" data-animation="scale-up" role="button">
+                <i class="icon md-notifications" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger up">5</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
+                <div class="dropdown-menu-header">
+                  <h5>NOTIFICAÇÕES</h5>
+                  <span class="badge badge-round badge-danger">5 Novas</span>
+                </div>
+    
+                <div class="list-group">
+                  <div data-role="container">
+                    <div data-role="content">
+                      <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                        <div class="media">
+                          <div class="pr-10">
+                            <i class="icon md-receipt bg-green-600 white icon-circle" aria-hidden="true"></i>
+                          </div>
+                          <div class="media-body">
+                            <h6 class="media-heading">Novo serviço em Águeda </h6>
+                            <time class="media-meta" datetime="2017-06-12T20:50:48+08:00">5 horas atrás</time>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                 <div class="list-group">
+                  <div data-role="container">
+                    <div data-role="content">
+                      <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                        <div class="media">
+                          <div class="pr-10">
+                            <i class="icon md-receipt bg-green-600 white icon-circle" aria-hidden="true"></i>
+                          </div>
+                          <div class="media-body">
+                            <h6 class="media-heading">Documento </h6>
+                            <time class="media-meta" datetime="2017-06-12T20:50:48+08:00">5 horas atrás</time>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-menu-footer">
+                  <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                    <i class="icon md-settings" aria-hidden="true"></i>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                    Todas as notificações
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" title="Messages"
+                aria-expanded="false" data-animation="scale-up" role="button">
+                <i class="icon md-email" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-info up">3</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
+                <div class="dropdown-menu-header" role="presentation">
+                  <h5>MENSAGENS</h5>
+                  <span class="badge badge-round badge-info">3 Novas</span>
+                </div>
+    
+                <div class="list-group" role="presentation">
+                  <div data-role="container">
+                    <div data-role="content">
+                      <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                        <div class="media">
+                          <div class="pr-10">
+                            <span class="avatar avatar-sm avatar-online">
+                              <img src="portraits/5.jpg" alt="..." />
+                              <i></i>
+                            </span>
+                          </div>
+                          <div class="media-body">
+                            <h6 class="media-heading">Mário</h6>
+                            <div class="media-meta">
+                              <time datetime="2017-06-17T20:22:05+08:00">25 minutos atrás</time>
+                            </div>
+                            <div class="media-detail">Serviço terminado</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-menu-footer" role="presentation">
+                  <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                    <i class="icon md-settings" aria-hidden="true"></i>
+                  </a>
+                  <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                    ver todas as mensagens
+                  </a>
+                </div>
+              </div>
+            </li>
+      
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    
+        <!-- Site Navbar Seach -->
+        <div class="collapse navbar-search-overlap" id="site-navbar-search">
+          <form role="search">
+            <div class="form-group">
+              <div class="input-search">
+                <i class="input-search-icon md-search" aria-hidden="true"></i>
+                <input type="text" class="form-control" name="site-search" placeholder="Search...">
+                <button type="button" class="input-search-close icon md-close" data-target="#site-navbar-search"
+                  data-toggle="collapse" aria-label="Close"></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End Site Navbar Seach -->
+      </div>
+    </nav>    <div class="site-menubar">
+      <div class="site-menubar-body">
+        <div>
+          <div>
+            <ul class="site-menu" data-plugin="menu">
+              <li class="site-menu-category">Homepage</li>
+              <li class="site-menu-item has-sub">
+              </li>
+              <li class="site-menu-item has-sub">
+                <a href="javascript:void(0)">
+                        <span class="site-menu-title">Gerir</span>
+                                <span class="site-menu-arrow"></span>
+                    </a>
+                <ul class="site-menu-sub">
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="#">
+                      <span class="site-menu-title">Clientes</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="#">
+                      <span class="site-menu-title">Funcionários</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="#">
+                      <span class="site-menu-title">Inspecções</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="#">
+                      <span class="site-menu-title">Inspecções</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </li>
+              <li class="site-menu-item has-sub">
+                <a href="javascript:void(0)">
+                        <span class="site-menu-title">+ Novo</span>
+                                <span class="site-menu-arrow"></span>
+                    </a>
+                <ul class="site-menu-sub">
+                  <li class="site-menu-item">
+                    <a href="javascript:void(0)">
+                      <span class="site-menu-title">Clientes</span>
+                    </a>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="#">
+                          <span class="site-menu-title">Funcionários</span>
+                        </a>
+                      </li>
+                      <li class="site-menu-item">
+                        <a class="animsition-link" href="#">
+                          <span class="site-menu-title">Inspecções</span>
+                        </a>
+                      </li>
+                        <li class="site-menu-item">
+                        <a class="animsition-link" href="#">
+                          <span class="site-menu-title">Inspecções</span>
+                        </a>
+                      </li>
+                     
+                    </ul>
+                    <li class="site-menu-item">
+                <a href="javascript:void(0)">
+                        <span class="site-menu-title">Notificações</span>
+                    </a>
+                      </li>  
+                       <li class="site-menu-item">
+                <a href="javascript:void(0)">
+                        <span class="site-menu-title">Mensagens</span>
+                    </a>
+                      </li>  
+                       <li class="site-menu-item">
+                <a href="javascript:void(0)">
+                        <span class="site-menu-title">Documentos</span>
+                    </a>
+                      </li>  
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+            </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+            </ul>
+            </div>      
+            </div>
+        </div>
+      </div>
+    
+      <div class="site-menubar-footer">
+          <div class="site-menubar-section">
+              <h5>
+                Metas
+                <span class="float-right">40%</span>
+              </h5>
+              <div class="progress progress-xs">
+                <div class="progress-bar active" style="width: 30%;" role="progressbar"></div>
+              </div></div>
+        <a href="javascript: void(0);" class="fold-show" data-placement="top" data-toggle="tooltip"
+          data-original-title="Settings">
+          <span class="icon md-settings" aria-hidden="true"></span>
+        </a>
+        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Lock">
+          <span class="icon md-eye-off" aria-hidden="true"></span>
+        </a>
+        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
+          <span class="icon md-power" aria-hidden="true"></span>
+        </a>
+      </div></div>    <div class="site-gridmenu">
+      <div>
+        <div>
+          <ul>
+            <li>
+              <a href="apps/mailbox/mailbox.html">
+                <i class="icon md-email"></i>
+                <span>Mailbox</span>
+              </a>
+            </li>
+            <li>
+              <a href="apps/calendar/calendar.html">
+                <i class="icon md-calendar"></i>
+                <span>Calendar</span>
+              </a>
+            </li>
+            <li>
+              <a href="apps/contacts/contacts.html">
+                <i class="icon md-account"></i>
+                <span>Contacts</span>
+              </a>
+            </li>
+            <li>
+              <a href="apps/media/overview.html">
+                <i class="icon md-videocam"></i>
+                <span>Media</span>
+              </a>
+            </li>
+            <li>
+              <a href="apps/documents/categories.html">
+                <i class="icon md-receipt"></i>
+                <span>Documents</span>
+              </a>
+            </li>
+            <li>
+              <a href="apps/projects/projects.html">
+                <i class="icon md-image"></i>
+                <span>Project</span>
+              </a>
+            </li>
+            <li>
+              <a href="apps/forum/forum.html">
+                <i class="icon md-comments"></i>
+                <span>Forum</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="icon md-view-dashboard"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page -->
+    <div class="page">
+      <div class="page-content container-fluid">
+        <div class="row" data-plugin="matchHeight" data-by-row="true">
+          <div class="col-xl-3 col-md-6">
+            <!-- Widget Linearea One-->
+            <div class="card card-shadow" id="widgetLineareaOne">
+              <div class="card-block p-20 pt-10">
+                <div class="clearfix">
+                  <div class="grey-800 float-left py-10">
+                    <i class="icon md-account grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    Clientes
+                  </div>
+                  <span class="float-right grey-700 font-size-30">1,253</span>
+                </div>
+                <div class="mb-20 grey-500">
+                  <i class="icon md-long-arrow-up green-500 font-size-16"></i>                  15% desde ontem
+                </div>
+                <div class="ct-chart h-50"></div>
+              </div>
+            </div>
+            <!-- End Widget Linearea One -->
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <!-- Widget Linearea Two -->
+            <div class="card card-shadow" id="widgetLineareaTwo">
+              <div class="card-block p-20 pt-10">
+                <div class="clearfix">
+                  <div class="grey-800 float-left py-10">
+                    <i class="icon md-flash grey-600 font-size-24 vertical-align-bottom mr-5"></i>                   Total de Inspecções
+                  </div>
+                  <span class="float-right grey-700 font-size-30">5794</span>
+                </div>
+                <div class="mb-20 grey-500">                
+                </div>
+                <div class="ct-chart h-50"></div>
+              </div>
+            </div>
+            <!-- End Widget Linearea Two -->
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <!-- Widget Linearea Three -->
+            <div class="card card-shadow" id="widgetLineareaThree">
+              <div class="card-block p-20 pt-10">
+                <div class="clearfix">
+                  <div class="grey-800 float-left py-10">
+                    <i class="icon md-chart grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    Taxa de sucesso
+                  </div>
+                  <span class="float-right grey-700 font-size-30">80%</span>
+                </div>
+                <div class="mb-20 grey-500">
+                  <i class="icon md-long-arrow-up green-500 font-size-16"></i>                  3% desde ontem
+                </div>
+                <div class="ct-chart h-50"></div>
+              </div>
+            </div>
+            <!-- End Widget Linearea Three -->
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <!-- Widget Linearea Four -->
+            <div class="card card-shadow" id="widgetLineareaFour">
+              <div class="card-block p-20 pt-10">
+                <div class="clearfix">
+                  <div class="grey-800 float-left py-10">
+                    <i class="icon md-view-list grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    Inspecções por dia                  </div>
+                  <span class="float-right grey-700 font-size-30">1253</span>
+                </div>
+                <div class="mb-20 grey-500">
+                  <i class="icon md-long-arrow-down red-500 font-size-16"></i>                  -7% desde ontem
+                </div>
+                <div class="ct-chart h-50"></div>
+              </div>
+            </div>
+            <!-- End Widget Linearea Four -->
+          </div>
+          <div class="col-xxl-6 col-lg-6">
+            <!-- Panel Projects -->
+            <div class="panel" id="projects">
+              <div class="panel-heading">
+                <h3 class="panel-title">Estado do Inspecções</h3>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <td>ID</td>
+                      <td>Nome</td>
+                      <td>Funcionário</td>
+                      <td>Estado</td>
+                      <td>Data</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>203</td>
+                        <td>
+                        Soliflan
+                      </td><td>
+                         <span class="avatar avatar-online">
+                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span>
+                  <i></i>
+                </span></td>
+                      <td>
+                        <span class="badge badge-primary">No terreno</span>
+                      </td>
+                      <td>18.05</td>
+                     
+                    </tr>
+                    
+                  </tbody>
+                      <tbody>
+                    <tr>
+                      <td>203</td>
+                        <td>
+                        Soliflan
+                      </td><td>
+                         <span class="avatar avatar-online">
+                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span>
+                  <i></i>
+                </span></td>
+                      <td>
+                        <span class="badge badge-primary">No terreno</span>
+                      </td>
+                      <td>18.05</td>
+                     
+                    </tr>
+                    
+                  </tbody>
+                      <tbody>
+                    <tr>
+                      <td>203</td>
+                        <td>
+                        Soliflan
+                      </td><td>
+                         <span class="avatar avatar-online">
+                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span>
+                  <i></i>
+                </span></td>
+                      <td>
+                        <span class="badge badge-primary">No terreno</span>
+                      </td>
+                      <td>18.05</td>
+                     
+                    </tr>
+                    
+                  </tbody>
+                      <tbody>
+                    <tr>
+                      <td>203</td>
+                        <td>
+                        Soliflan
+                      </td><td>
+                         <span class="avatar avatar-online">
+                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span> 
+                  <i></i>
+                </span></td>
+                      <td>
+                        <span class="badge badge-primary">No terreno</span>
+                      </td>
+                      <td>18.05</td>              
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Projects -->
+          </div>
+
+          <div class="col-xxl-6 col-lg-6">
+            <!-- Panel Projects Status -->
+            <div class="panel" id="projects-status">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  Próximas Inspecções
+                  <span class="badge badge-pill badge-info">5</span>
+                </h3>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped proximas">
+                  <thead>
+                    <tr>
+                      <td>ID</td>
+                      <td>Nome</td>
+                      <td>Funcionário</td>
+                      <td>Data</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>203</td>
+                        <td>
+                        Soliflan
+                      </td><td>
+                          <span>Mário</span>
+               </td>
+                    
+                      <td>18.05</td>              
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td>203</td>
+                        <td>
+                        Soliflan
+                      </td><td>
+                          <span>Mário</span>
+               </td>
+                    
+                      <td>18.05</td>              
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td>203</td>
+                        <td>
+                        Soliflan
+                      </td><td>
+                          <span>Mário</span>
+               </td>
+                    
+                      <td>18.05</td>              
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td>203</td>
+                        <td>
+                        Soliflan
+                      </td><td>
+                          <span>Mário</span>
+               </td>
+                    
+                      <td>18.05</td>              
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Projects Stats -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Page -->
+
+
+    <!-- Footer -->
+    <footer class="site-footer">       
+      <div class="site-footer-legal">© 2018. made by Webexperts</div>
+    </footer>
+    <!-- Core  -->
+    <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/popper-js/umd/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.js"></script>
+    <script src="vendor/animsition/animsition.js"></script>
+    <script src="vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="vendor/waves/waves.js"></script>
+    
+    <!-- Plugins -->
+    <script src="vendor/switchery/switchery.js"></script>
+    <script src="vendor/intro-js/intro.js"></script>
+    <script src="vendor/screenfull/screenfull.js"></script>
+    <script src="vendor/slidepanel/jquery-slidePanel.js"></script>
+        <script src="vendor/chartist/chartist.min.js"></script>
+        <script src="vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script>
+        <script src="vendor/jvectormap/jquery-jvectormap.min.js"></script>
+        <script src="vendor/jvectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="vendor/matchheight/jquery.matchHeight-min.js"></script>
+        <script src="vendor/peity/jquery.peity.min.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/Component.js"></script>
+    <script src="js/Plugin.js"></script>
+    <script src="js/Base.js"></script>
+    <script src="js/Config.js"></script>
+    
+    <script src="assets/js/Section/Menubar.js"></script>
+    <script src="assets/js/Section/GridMenu.js"></script>
+    <script src="assets/js/Section/Sidebar.js"></script>
+    <script src="assets/js/Section/PageAside.js"></script>
+    <script src="assets/js/Plugin/menu.js"></script>
+    
+    <script src="js/config/colors.js"></script>
+    <script src="assets/js/config/tour.js"></script>
+    <script>Config.set('assets', 'assets');</script>
+    
+    <!-- Page -->
+    <script src="assets/js/Site.js"></script>
+    <script src="js/Plugin/asscrollable.js"></script>
+    <script src="js/Plugin/slidepanel.js"></script>
+    <script src="js/Plugin/switchery.js"></script>
+        <script src="js/Plugin/matchheight.js"></script>
+        <script src="js/Plugin/jvectormap.js"></script>
+        <script src="js/Plugin/peity.js"></script>
+    
+        <script src="assets/examples/js/dashboard/v1.js"></script>
+    
+  </body>
+</html>

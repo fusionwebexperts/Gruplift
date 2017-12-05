@@ -1,0 +1,60 @@
+@import 'stylesheet';
+
+
+$margin: 1em;
+$height_form: 100vh;
+$width_form: 100vw;
+$container: 8%;
+
+
+.site-navbar {
+    background-color: $cor-acesssoria  !important;
+}
+.titulo{
+    font-size: $large ;
+}
+@media all and (min-width: 768px){
+.navbar-right , .btn-primary {
+    float: right;
+    margin-right: $margin !important;
+}}
+
+form.wizard.container {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+  
+  .wizard {
+    overflow: hidden;
+    padding-top: 1em;
+  }
+  
+  .step {
+    margin-right: $container !important;
+    border: none;
+    background-color: #f1f4f5 !important;
+  }
+  
+  .step[id] {
+    position:fixed;
+    transition: left .5s ease-out;
+    transform: translateZ(0);
+  }
+  
+  .step:not(:target) {
+      left:100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  .step:first-child,
+  .step:target {
+    overflow:auto;
+    padding: 0 0em;
+  }
+
+  .tab_form {
+    background-color: $cor-principal;
+    padding: $margin $margin $margin  0px;
+    color: $cor-acesssoria;
+}

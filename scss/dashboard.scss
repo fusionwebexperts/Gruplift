@@ -1,0 +1,29 @@
+@import 'stylesheet';
+
+$altura_celula: 4.1em;
+$margin: 1em;
+$height_form: 100vh;
+$width_form: 100vw;
+$container: 8%;
+$border-sub: 1px solid #ccc;
+
+.sub-title {
+border-top: $border-sub;
+border-bottom: $border-sub;
+}
+
+.site-navbar {
+    background-color: $cor-acesssoria  !important;
+}
+.site-menubar-footer>a {
+    background-color: $cor-acesssoria !important;
+}
+.navbar-container.container-fluid{
+     margin-right: $margin * 2  !important;
+}
+.funcionario{
+    margin-left:$margin;
+}
+table.table.table-striped.proximas tbody tr {
+    height: $altura_celula;
+}
