@@ -84,19 +84,22 @@ form.wizard.container {
 
 .topo_img {
   background-image: url("../img/formularios/question.png");
-  width: 327px;
-  height: 254px; }
+  width: 100%;
+  height: 400px; }
 
 span.aproove {
   background-image: url("../img/formularios/aprovado.png");
   display: inline-block;
   width: 50%;
-  height: 100px; }
+  height: 150px; }
 
 span.reject {
   background-image: url("../img/formularios/reprovado.png");
   display: inline-block;
   width: 50%;
-  height: 100px; }
+  height: 150px; }
+
+.step[id] {
+  max-width: 668px; }
 
 /*# sourceMappingURL=formularios.css.map */

@@ -5,8 +5,8 @@ $margin: 1em;
 $height_form: 100vh;
 $width_form: 100vw;
 $container: 8%;
-
-
+$formulario: 668px;
+$full-div: 100%;
 .site-navbar {
     background-color: $cor-acesssoria  !important;
 }
@@ -55,21 +55,25 @@ form.wizard.container {
 
  .topo_img{
 background-image: url("../img/formularios/question.png");
-    width: 327px;
-    height: 254px;
+    width: $full-div;
+    height: 400px;
 
  }
 
  span.aproove {
    background-image: url("../img/formularios/aprovado.png");
       display: inline-block;
-    width: 50%;
-    height: 100px;
+    width: $full-div/2;
+    height: 150px;
  }
 
  span.reject {
 background-image: url("../img/formularios/reprovado.png");
      display: inline-block;
-    width: 50%;
-    height: 100px;
+    width: $full-div/2;
+    height: 150px;
  }
+.step[id] {
+    max-width: $formulario;
+}
+

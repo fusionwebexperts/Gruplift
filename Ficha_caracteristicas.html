@@ -15,6 +15,8 @@
 
     <!-- Estilos fusion -->
     <link rel="stylesheet" href="scss/formularios.css">
+    <link rel="stylesheet" href="css/bullets.css">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-extend.min.css">
@@ -417,16 +419,28 @@
         </div>
         <div>
           <form class="wizard container">
-            <fieldset class="step" id="step1">
+            
+            <fieldset class="step col-md-12" id="step1"><div class="header"><span class="esquerda">1. Máquinas</span><span class="direita">	<div class="sbn sbn02">
+                <ul>
+                  <li><a class="is-active" href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                </ul>
+      	</div></span></div>
              <div class="tab_form"> <div class="topo_img">1.sadasdasdasdasdasdasdasdasdasd</div><div class="divresposta">   <a href="#step2"><span class="aproove"></span></a><a href="#step2"><span class="reject"></span></a></div> </div>
-
               <a href="#step2">continue</a>
             </fieldset>
-            <fieldset class="step" id="step2">
+            <fieldset class="step col-md-12" id="step2">
               <div class="tab_form"><div class="topo_img">2.</div><div class="divresposta"><a href="#step3"><span class="aproove"></span></a><a href="#step3"><span class="reject"></span></a></div> </div>
               <a href="#step3">continue</a>
             </fieldset>
-            <fieldset class="step" id="step3">
+            <fieldset class="step col-md-12" id="step3">
               <div class="tab_form"><div class="topo_img">3.</div><div class="divresposta"><a href="#step1"><span class="aproove"></span></a><a href="#step1"><span class="reject"></span></a></div> </div>
               <button type="submit">finish</button>
               <a href="#step1">restart</a>
@@ -480,13 +494,14 @@
     <script>Config.set('assets', 'assets');</script>
     
     <!-- Page -->
+    <script src="js/bullets.js"/></script>
     <script src="assets/js/Site.js"></script>
     <script src="js/Plugin/asscrollable.js"></script>
     <script src="js/Plugin/slidepanel.js"></script>
     <script src="js/Plugin/switchery.js"></script>
         <script src="js/Plugin/jquery-wizard.js"></script>
         <script src="js/Plugin/matchheight.js"></script>
-    
+
         <script src="assets/examples/js/forms/wizard.js"></script>
     
   </body>
