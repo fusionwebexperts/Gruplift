@@ -25,7 +25,6 @@ form.wizard.container {
 }
   
   .wizard {
-    overflow: hidden;
     padding-top: 1em;
   }
   
@@ -43,13 +42,11 @@ form.wizard.container {
   
   .step:not(:target) {
       left:100%;
-    overflow: hidden;
     padding: 0;
     margin: 0;
   }
   .step:first-child,
   .step:target {
-    overflow:auto;
     padding: 0 0em;
   }
 
@@ -77,3 +74,13 @@ background-image: url("../img/formularios/reprovado.png");
     max-width: $formulario;
 }
 
+span.esquerda {
+    color:black;
+    font-size: $large;
+}
+.header.form{
+  margin-bottom:1em !important;
+}
+span.direita {
+    float: right;
+}

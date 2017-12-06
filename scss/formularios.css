@@ -58,7 +58,6 @@ form.wizard.container {
   padding-left: 0px; }
 
 .wizard {
-  overflow: hidden;
   padding-top: 1em; }
 
 .step {
@@ -73,13 +72,11 @@ form.wizard.container {
 
 .step:not(:target) {
   left: 100%;
-  overflow: hidden;
   padding: 0;
   margin: 0; }
 
 .step:first-child,
 .step:target {
-  overflow: auto;
   padding: 0 0em; }
 
 .topo_img {
@@ -101,5 +98,15 @@ span.reject {
 
 .step[id] {
   max-width: 668px; }
+
+span.esquerda {
+  color: black;
+  font-size: 20px; }
+
+.header.form {
+  margin-bottom: 1em !important; }
+
+span.direita {
+  float: right; }
 
 /*# sourceMappingURL=formularios.css.map */
