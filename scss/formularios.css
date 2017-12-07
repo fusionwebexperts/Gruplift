@@ -82,19 +82,26 @@ form.wizard.container {
 .topo_img {
   background-image: url("../img/formularios/question.png");
   width: 100%;
-  height: 400px; }
+  height: 400px;
+  width: 100%;
+  min-height: 300px;
+  padding-left: 1.0715rem;
+  margin-right: 50px !important;
+  padding-right: 14% !important; }
 
 span.aproove {
   background-image: url("../img/formularios/aprovado.png");
   display: inline-block;
   width: 50%;
-  height: 150px; }
+  height: 7.6em;
+  background-size: contain; }
 
 span.reject {
   background-image: url("../img/formularios/reprovado.png");
   display: inline-block;
   width: 50%;
-  height: 150px; }
+  height: 7.6em;
+  background-size: contain; }
 
 .step[id] {
   max-width: 668px; }

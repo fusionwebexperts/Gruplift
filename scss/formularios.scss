@@ -1,6 +1,6 @@
 @import 'stylesheet';
 
-
+$decisionboxes: 7.6em;
 $margin: 1em;
 $height_form: 100vh;
 $width_form: 100vw;
@@ -54,6 +54,11 @@ form.wizard.container {
 background-image: url("../img/formularios/question.png");
     width: $full-div;
     height: 400px;
+        width: 100%;
+    min-height: 300px;
+    padding-left: 1.0715rem;
+    margin-right: 50px !important;
+    padding-right: 14% !important;
 
  }
 
@@ -61,14 +66,16 @@ background-image: url("../img/formularios/question.png");
    background-image: url("../img/formularios/aprovado.png");
       display: inline-block;
     width: $full-div/2;
-    height: 150px;
+   height: $decisionboxes;
+       background-size: contain;
  }
 
  span.reject {
 background-image: url("../img/formularios/reprovado.png");
      display: inline-block;
     width: $full-div/2;
-    height: 150px;
+    height: $decisionboxes;
+        background-size: contain;
  }
 .step[id] {
     max-width: $formulario;
@@ -84,3 +91,4 @@ span.esquerda {
 span.direita {
     float: right;
 }
+
