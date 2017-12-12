@@ -1,12 +1,14 @@
 @import 'stylesheet';
-
-$decisionboxes: 7.6em;
+$espacamento_letra: 5px;
+$decisionboxes: 100%;
 $margin: 1em;
 $height_form: 100vh;
 $width_form: 100vw;
 $container: 8%;
 $formulario: 668px;
 $full-div: 100%;
+$container_margin: 10%;
+$botoes_max: 9.8em;
 .site-navbar {
     background-color: $cor-acesssoria  !important;
 }
@@ -23,6 +25,10 @@ form.wizard.container {
     margin-left: 0px;
     padding-left: 0px;
 }
+
+body {
+        overflow-x: hidden;
+}
   
   .wizard {
     padding-top: 1em;
@@ -35,9 +41,10 @@ form.wizard.container {
   }
   
   .step[id] {
-    position:fixed;
+    position:absolute;
     transition: left .5s ease-out;
     transform: translateZ(0);
+   padding-right: 10%;
   }
   
   .step:not(:target) {
@@ -58,37 +65,71 @@ background-image: url("../img/formularios/question.png");
     min-height: 300px;
     padding-left: 1.0715rem;
     margin-right: 50px !important;
-    padding-right: 14% !important;
+    text-align:center;
 
  }
 
- span.aproove {
-   background-image: url("../img/formularios/aprovado.png");
-      display: inline-block;
-    width: $full-div/2;
-   height: $decisionboxes;
-       background-size: contain;
- }
 
- span.reject {
-background-image: url("../img/formularios/reprovado.png");
-     display: inline-block;
-    width: $full-div/2;
-    height: $decisionboxes;
-        background-size: contain;
- }
 .step[id] {
     max-width: $formulario;
+    padding-right: $container_margin;
+}
+
+
+.header.form{
+  margin-bottom:$margin !important;
+}
+
+
+
+/****FORMULARIO **/
+.divresposta {
+    height:$botoes_max !important;
+}
+span.questao{
+color: #fff;
+    text-align: center;
+    font-size: -webkit-xxx-large;
+    font-weight: 400;
+    letter-spacing: $espacamento_letra;
+    top: $full-div/4;
+    position: relative;
+}
+
+span.direita {
+    float: right;
 }
 
 span.esquerda {
     color:black;
     font-size: $large;
 }
-.header.form{
-  margin-bottom:1em !important;
+
+ span.aproove, span.reject {
+   background-image: url("../img/formularios/aprovado.png");
+      display: inline-block;
+    width: $full-div/2;
+   height: $decisionboxes;
+       background-size: contain;
+
+ }
+span.reject{
+  background-image: url("../img/formularios/reprovado.png");
+    
 }
-span.direita {
-    float: right;
+.questao_numero{
+    color: #fff;
+    text-align: center;
+    font-size: $medium;
+    letter-spacing: $espacamento_letra;
+    top: 28%;
+    position: relative;
 }
 
+.eye{
+       color: #fff;
+    text-align: center;
+    top: $full-div/3;
+    position: relative;
+  
+}
