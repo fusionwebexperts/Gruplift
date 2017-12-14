@@ -1,1 +1,8 @@
 @import 'stylesheet';
+
+$margin_radio: 25px;
+
+.radio_mid {
+    margin-top: $margin_radio !important;
+}
+

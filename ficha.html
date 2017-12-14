@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
     <!-- Estilos fusion -->
-    <link rel="stylesheet" href="scss/formularios.css">
+    <link rel="stylesheet" href="scss/ficha.css">
     <link rel="stylesheet" href="css/bullets.css">
 
     <!-- Stylesheets -->
@@ -418,6 +418,7 @@
       <div class="panel container-fluid">
                 <form autocomplete="off">
 <!--- LINHA 1 !-->                  
+                  <br/>
                   <div class="form-group form-material row" data-plugin="formMaterial">
                    <div class="col-md-4"> <label class="form-control-label" for="inputText">
                     </label>
@@ -499,22 +500,640 @@
 
 <!--- LINHA 7 !-->
                   <div class="form-group form-material row" data-plugin="formMaterial">
-                    <div class="col-md-2">                   
-                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Nºfogos" />
+                    <div class="col-md-2">Regulamentação Aplicável </div> 
+                    <div class="col-md-2">          <label class="form-control-label" for="inputText">
+                    </label>          
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Requerer Inspecção" />
                      </div>
+                         <div class="col-md-1"></div>  
                   <div class="col-md-2">                    <label class="form-control-label" for="inputText">
                     </label>
-                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="NºAscensores" />
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Proc" />
                   </div>
-                    <div class="col-md-6">                    <label class="form-control-label" for="inputText">
+                     <div class="col-md-1"></div>  
+                    <div class="col-md-2">                    <label class="form-control-label" for="inputText">
                     </label>
-                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Marco Fabrico / Instalação" />
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Ultima Inspecção" />
                     </div>
                   </div> 
 
+<!--- LINHA 8 !-->
+                     <div class="form-group form-material row" data-plugin="formMaterial">
+                     <div class="col-md-12">          
+                       <div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputdecreto">Decreto 26591/1936</label>
+                            <input type="radio" id="inputhabitcao" name="inputdecreto" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Decreto 513/70</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                             <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial">Portaria 376/91 (EN81-1)</label>
+                            <input type="radio" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial"></label>
+                         <input type="radio" name="reason" value=""> <input type="text" name="other_reason" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                          </div>
+                        </div>  
+                     </div>
+                     </div>
+                     <div class="form-group form-material row" data-plugin="formMaterial">
+                      <div class="col-md-12">     
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputdecreto">Portaria 964/91 (EN81-2)</label>
+                            <input type="radio" id="inputhabitcao" name="inputdecreto" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">DL 295/98 (EN81-1/2:98)</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                             <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial">EN 115</label>
+                            <input type="radio" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                           <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial"></label>
+                         <input type="radio" name="reason" value=""><input type="text" name="other_reason" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                          </div>
+                        </div>  
+                     </div>
+   <!--- PRÉ-LINHA 9 !-->    
+<hr/>
+<br/>
+<h4> Ascensores e Monta-Cargas - Características Gerais </h4>
+<br/>
+ <!--- LINHA 9 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Transporte: </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Pessoas</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Pessoas e cargas</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                             <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial">Cargas</label>
+                            <input type="radio" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
 
-                  </div> 
+  <!--- LINHA 10 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Grupo </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Simplex</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Duplex</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                             <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial">Triplex</label>
+                            <input type="radio" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+  <!--- LINHA 11 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Tipo de Caixa </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Aberta</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Fechada cheia</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                             <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial">Fechada Perfurada</label>
+                            <input type="radio" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+  <!--- LINHA 12 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Accionamento </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Eléctrico</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Hidráulico</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+ <!--- LINHA 13 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Casa de Máquinas </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sim</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Em cima</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Em baixo</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+ <!--- LINHA 14 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Tipo Porta de Patamar </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Lagarta</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Manual</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Automática</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Guilhotina</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                                  <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Fole</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                           <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Articulada</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial"></label>
+                         <input type="radio" name="reason" value=""><input type="text" name="other_reason" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                          </div>
+                          </div>
+                        </div>  
+                        </div>
+                   
+ <!--- LINHA 15 !-->
+                   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Tipo Porta de Cabine </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Lagarta</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Manual</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Automática</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Guilhotina</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                           
+                           <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Fole</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                           <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Articulada</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial"></label>
+                         <input type="radio" name="reason" value=""><input type="text" name="other_reason" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+ <!--- LINHA 16 !-->
+                   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Tipo Tracção </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Corrente Alterna - Uma velocidade</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Corrente Alterna - Duas velocidades</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Corrente Alterna com variador</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Corrente Contínua</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                           
+                           <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Variação de velocidade - Hidráulico</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+<!--- LINHA 17 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-2">          <label class="form-control-label" for="inputText">
+                    </label>          
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="NºPessoas" />
+                     </div>
+                         <div class="col-md-1"></div>  
+                  <div class="col-md-2">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="NºPisos" />
+                  </div>
+                     <div class="col-md-1"></div>  
+                    <div class="col-md-2">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="NºAcessos" />
+                    </div>
+                     
+                          <div class="radio-custom radio_mid radio-default radio-inline col-md-1">
+                            <label for="inputhabitcao">90</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio_mid radio-default radio-inline col-md-1">
+                            <label for="inputmisto">180</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                  </div>
+<!--- LINHA 18 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-2">          <label class="form-control-label" for="inputText">
+                    </label>          
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Carga Nominal (KG)" />
+                     </div>
+                         <div class="col-md-1"></div>  
+                  <div class="col-md-2">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Velocidades Nominal (m/s)" />
+                  </div>
+                     </div>
+ <!--- LINHA 19 !-->
+                   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Pedido de Socorro</label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sem dispositivo</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Alarme local</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Intercomunicador C/ central de atendimento</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Comunicação bidirecional</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+   <!--- PRÉ-LINHA 20 !-->    
+<hr/>
+<br/>
+<h4> Ascensores e Monta-Cargas - Características Especificas </h4>
+<br/>
+ <!--- LINHA 21 !-->
+                <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-3">          <label class="form-control-label" for="inputText">
+                    </label>          
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Tipo de Amortecedor Ref:" />
+                     </div>                          
+                  <div class="col-md-3">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Marca do Operador:" />
+                  </div>
+                    <div class="col-md-3">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Outras Observações" />
+                  </div>
+              </div>
+ <!--- LINHA 22 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                           <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Medidas de mola de porta de patamar:</label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                          <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Comp" />
+                          </div>
+                           <div class="radio-custom radio-default radio-inline col-md-2">
+                          <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Diam" />
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                          <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Esp" />
+                          </div>
+                        </div>  
+                     </div>
+                     </div> 
+ <!--- LINHA 23 !-->
+                   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Tipo de fechadura</label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Direita </label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Esquerda</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                          Rampeada:
+                            <div class="radio-custom radio-default radio-inline col-md-1">
+                            <label for="inputmisto">Sim</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" /> </div>
+                                <div class="radio-custom radio-default radio-inline col-md-1">
+                              <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" /> </div>
+                          </div>
+                        </div>  
+                     </div>
+   <!--- LINHA 24 !-->
+                   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                           <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Rampa</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputcomercial"></label>
+                         <input type="radio" name="reason" value=""><input type="text" name="other_reason" placeholder="Outra" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                          </div>
+                             <div class="radio-custom radio-default radio-inline col-md-2">
+                          <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Tensão" />
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                          <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Tipo de Botão" />
+                          </div>
+                        </div>  
+                     </div>
+                  </div>                                   
 
+   <!--- LINHA 25 !-->
+                 <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Luminoso</label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sim</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+   <!--- LINHA 26 !-->
+                 <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Quadrados</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Redondos</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Rectangulares</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Meia Lua</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                               <label for="inputmisto">Outros</label>
+                          <input type="radio" name="reason" value=""><input type="text" name="other_reason"  />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+     <!--- LINHA 27 !-->
+                   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-6">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Tipo de Quadro de Comando" />
+                  </div>
+                  </div>
+      <!--- LINHA 28 !-->
+                   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-4">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Marca da Máquina de Tração" />
+                  </div>
+                    <div class="col-md-2">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Potência de tração (kw)" />
+                  </div>
+                    <div class="col-md-4">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Óleo" />
+                  </div>
+                  </div>
+        <!--- LINHA 29 !-->
+                   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-4">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Modelo" />
+                  </div>
+                    <div class="col-md-2">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Potência de tração (CV)" />
+                  </div>
+                    <div class="col-md-4">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="QT" />
+                  </div>
+                  </div>
+        <!--- LINHA 30 !-->
+                   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-4">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="AMP (A)" />
+                  </div>
+                    <div class="col-md-2">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Potência de tração (HP)" />
+                  </div>
+                    <div class="col-md-4">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Última mudança" />
+                  </div>
+                  </div>
+                  <br/>
+             <!--- PRÉ-LINHA 31 !-->    
+<hr/>
+<br/>
+<h4> Módulo do Teto - Cabina </h4>
+<br/>
+ <!--- LINHA 31 !-->
+   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-5">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Tipo de Iluminação" />
+                  </div>
+                    <div class="col-md-5">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Tipo de Lâmpada" />
+                  </div>
+                  </div>
+   <!--- LINHA 32 !-->
+   <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-5">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Referência" />
+                  </div>
+                    <div class="col-md-5">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Quantidade" />
+                  </div>
+                  </div>
+                  <br/>
+                 <!--- PRÉ-LINHA 33 !-->    
+<hr/>
+<br/>
+<h4> Arquivo de Fotos</h4>
+<br/><br/>
+                   <!--- LINHA 33 !-->
+                 <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                          <label class="form-control-label col-md-1" for="label">Casa das Máquinas</label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Quadro de comando</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Quadro Eléctrico</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Máquina/Central</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Iluminação Geral</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Iluminação Emergência</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+                  
+                   <!--- LINHA 34 !-->
+                 <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                          <label class="form-control-label col-md-1" for="label">Cabina</label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Operador</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Teto</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Botoneira</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Display</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                            <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Chão</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+                  
+                   <!--- LINHA 35 !-->
+                 <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                          <label class="form-control-label col-md-1" for="label">Patamar</label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Display</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Porta</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Botão de chamada ( outro piso )</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+                     <!--- LINHA 36 !-->
+                     <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                      <label class="form-control-label col-md-1" for="label">Observações</label>
+                       <input type="textarea" class="form-control" id="inputText" name="inputText" placeholder="" />
+                       <br/><br/><br/>
+                         </div>  
+                     </div>
+                  </div>
+
+
+  </div>
+  </form>
     <!-- Core  -->
     <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
     <script src="vendor/jquery/jquery.js"></script>
