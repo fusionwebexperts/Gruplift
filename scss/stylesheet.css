@@ -1,23 +1,46 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - sty‡lesheet.scss
+/** CORES TEMA **/
+/** TAMANHO DE FONT DO TEMA **/
+/** TIPO DE FONT DO TEMA **/
+/**Titulos**/
+h1 {
+  font-size: 1.99998em; }
 
-Backtrace:
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:454:in `read'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
-C:/Ruby24-x64/bin/sass:23:in `load'
-C:/Ruby24-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - sty‡lesheet.scss"; }
+h2 {
+  font-size: 1.66665em; }
+
+h3 {
+  font-size: 1.33332em; }
+
+h4 {
+  font-size: 0.99999em; }
+
+h5 {
+  font-size: 0.66666em; }
+
+h6 {
+  font-size: 0.33333em; }
+
+/*** Cores dos Links ***/
+a {
+  color: #1c87c3; }
+  a:visited {
+    color: #0D537B; }
+  a:hover {
+    color: #0D537B; }
+  a:active {
+    color: #0D537B; }
+
+.btn-primary {
+  background-color: #1c87c3 !important;
+  color: #ffffff; }
+  .btn-primary:visited {
+    background-color: #0D537B !important;
+    color: #ffffff; }
+  .btn-primary:hover {
+    background-color: #0D537B !important;
+    color: #ffffff; }
+  .btn-primary:active {
+    background-color: #0D537B !important;
+    color: #ffffff; }
+
+/*# sourceMappingURL=stylesheet.css.map */
