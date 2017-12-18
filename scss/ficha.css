@@ -46,4 +46,13 @@ a {
 .radio_mid {
   margin-top: 25px !important; }
 
+.site-navbar .navbar-header .hamburger .hamburger-bar, .site-navbar .navbar-header .hamburger::after, .site-navbar .navbar-header .hamburger::before {
+  background-color: #000000 !important; }
+
+.radio-inline + .radio-inline {
+  margin-left: 0px !important; }
+
+.radio_number {
+  padding-left: 35px !important; }
+
 /*# sourceMappingURL=ficha.css.map */

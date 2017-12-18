@@ -1,8 +1,17 @@
 @import 'stylesheet';
-
+$no-margin: 0px;
 $margin_radio: 25px;
 
 .radio_mid {
     margin-top: $margin_radio !important;
 }
 
+.site-navbar .navbar-header .hamburger .hamburger-bar, .site-navbar .navbar-header .hamburger::after, .site-navbar .navbar-header .hamburger::before {
+background-color:$cor-secundaria !important;
+}
+.radio-inline+.radio-inline {
+    margin-left: $no-margin !important;
+}
+.radio_number {
+    padding-left: $margin-radio + 10px !important;
+}
