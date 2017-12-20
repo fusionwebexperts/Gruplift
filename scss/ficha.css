@@ -46,6 +46,9 @@ a {
 .radio_mid {
   margin-top: 25px !important; }
 
+.checkbox-inline + .checkbox-inline {
+  margin-left: 0px !important; }
+
 .site-navbar .navbar-header .hamburger .hamburger-bar, .site-navbar .navbar-header .hamburger::after, .site-navbar .navbar-header .hamburger::before {
   background-color: #000000 !important; }
 

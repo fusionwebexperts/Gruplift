@@ -5,7 +5,9 @@ $margin_radio: 25px;
 .radio_mid {
     margin-top: $margin_radio !important;
 }
-
+.checkbox-inline+.checkbox-inline {
+    margin-left:$no-margin !important;
+}
 .site-navbar .navbar-header .hamburger .hamburger-bar, .site-navbar .navbar-header .hamburger::after, .site-navbar .navbar-header .hamburger::before {
 background-color:$cor-secundaria !important;
 }

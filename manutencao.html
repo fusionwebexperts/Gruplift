@@ -1,4 +1,4 @@
- 
+
 <!DOCTYPE html>
 <html class="no-js css-menubar" lang="en">
   <head>
@@ -8,14 +8,16 @@
     <meta name="description" content="bootstrap material admin template">
     <meta name="author" content="">
     
-    <title>Inspeção e Visita ao Elevador</title>
+    <title>Ficha de manutenção</title>
     
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
+    
+    <!--  Fusion Estilos -->
 
-    <!-- Estilos fusion -->
-    <link rel="stylesheet" href="scss/formularios.css">
-    <link rel="stylesheet" href="css/bullets.css">
+    <link rel="stylesheet" href="scss/ficha.css">
+     <link rel="stylesheet" href="scss/dashboard.css">
+
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -30,72 +32,56 @@
     <link rel="stylesheet" href="vendor/slidepanel/slidePanel.css">
     <link rel="stylesheet" href="vendor/flag-icon-css/flag-icon.css">
     <link rel="stylesheet" href="vendor/waves/waves.css">
-        <link rel="stylesheet" href="vendor/jquery-wizard/jquery-wizard.css">
-        <link rel="stylesheet" href="vendor/formvalidation/formValidation.css">
+        <link rel="stylesheet" href="vendor/chartist/chartist.css">
+        <link rel="stylesheet" href="vendor/jvectormap/jquery-jvectormap.css">
+        <link rel="stylesheet" href="vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+        <link rel="stylesheet" href="assets/examples/css/dashboard/v1.css">
     
     
     <!-- Fonts -->
     <link rel="stylesheet" href="fonts/material-design/material-design.min.css">
     <link rel="stylesheet" href="fonts/brand-icons/brand-icons.min.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
-    
-    <!--[if lt IE 9]>
-    <script src="vendor/html5shiv/html5shiv.min.js"></script>
-    <![endif]-->
-    
-    <!--[if lt IE 10]>
-    <script src="vendor/media-match/media.match.min.js"></script>
-    <script src="vendor/respond/respond.min.js"></script>
-    <![endif]-->
-    
     <!-- Scripts -->
     <script src="vendor/breakpoints/breakpoints.js"></script>
     <script>
       Breakpoints();
     </script>
   </head>
-  <body class="animsition">
+  <body class="animsition dashboard">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"  data-toggle="collapse">
+          <i class="icon md-more" aria-hidden="true"></i>
+          
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <img class="navbar-brand-logo" src="img/logo.png" title="">
+        </div> 
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
         
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
-              data-toggle="menubar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="hamburger-bar"></span>
-            </button>
-            <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
-              data-toggle="collapse">
-              <i class="icon md-more" aria-hidden="true"></i>
-            </button>
-            <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-              <img class="navbar-brand-logo" src="img/logo.png" title="Remark">
-              <span class="navbar-brand-text hidden-xs-down"> Remark</span>
-            </div>
-            <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"
-              data-toggle="collapse">
-              <span class="sr-only">Toggle Search</span>
-              <i class="icon md-search" aria-hidden="true"></i>
-            </button>
-          </div>
-        
-          <div class="navbar-container container-fluid">
-            <!-- Navbar Collapse -->
-            <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
-              <!-- Navbar Toolbar -->
-              
-              <!-- End Navbar Toolbar -->
-        
-              <!-- Navbar Toolbar Right -->
-            <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
             <li class="nav-item dropdown">
               <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
                 data-animation="scale-up" role="button">
                 <span class="avatar avatar-online">
-                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario"></span>
+                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span>
                   <i></i>
                 </span>
               </a>
@@ -334,101 +320,213 @@
         </div>
       </div>
     
-      
+</div>   
 
-
-        <!-- Page -->
-    <div class="page">
+    <!-- Page -->
+     <div class="page">
       <div class="page-header">
-        <h1 class="page-title">Inspeção e Visita Ao Elevador</h1>
+        <h1 class="page-title">Ficha de Manutenção</h1>
         <br/>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item"><a href="javascript:void(0)">Novo</a></li>
           <li class="breadcrumb-item"><a href="javascript:void(0)">Documentos</a></li>
-          <li class="breadcrumb-item active">Inspecção e Visita ao Elevador</li>
+          <li class="breadcrumb-item active">Ficha de Manutenção</li>
         </ol>
         <div class="page-header-actions">
-      </a>
-        </div>
-        <div>
-          <form class="wizard container row">
+        </a>
+      </div> 
+      <div class="panel container-fluid">
+                <form autocomplete="off">
+<!--- LINHA 1 !-->                  
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                   <div class="col-md-4"> <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="number" class="form-control" id="inputText" name="inputText" placeholder="Nº Contrato" />
+                    </div>
+                    <div class="col-md-6">                    <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Morada" />
+                  </div>
+                  </div>
             
-            <fieldset class="step col-md-12" id="step1"><div class="header form"><span class="esquerda">1. Máquinas</span><span class="direita">	<div class="sbn sbn02">
-                <ul>
-                  <li><a class="is-active" href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">6</a></li>
-                  <li><a href="#">7</a></li>
-                  <li><a href="#">8</a></li>
-                  <li><a href="#">9</a></li>
-                </ul>
-      	</div></span></div>
-             <div class="tab_form"> <div class="topo_img col-md-12">
-               <span class="questao">SUJIDADE</span><br/>
-               <span class="questao_numero">1.1.1</span><br/>
-              <a href="#step3"><span class="left_arrow"><</span></a><img class="eye" src="img/formularios/eye.png"/><a href="#step2"><span class="right_arrow">></span></a>
-               </div><div class="divresposta">   <a href="#step2"><span class="aproove"></span></a><a href="#step2"><span class="reject"></span></a></div> </div>
-            </fieldset>
-            <fieldset class="step col-md-12" id="step2"><div class="header form"><span class="esquerda">1. Máquinas</span><span class="direita">	<div class="sbn sbn02">
-                <ul>
-                  <li><a class="is-active" href="#">1</a></li>
-                  <li><a class="" href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">6</a></li>
-                  <li><a href="#">7</a></li>
-                  <li><a href="#">8</a></li>
-                  <li><a href="#">9</a></li>
-                </ul>
-      	</div></span></div>
-              <div class="tab_form"><div class="topo_img col-md-12">
-                 <span class="questao">PEÇAS PARTIDAS</span><br/>
-               <span class="questao_numero">1.1.2</span><br/>
-               <a href="#step1"><span class="left_arrow"><</span></a><img class="eye" src="img/formularios/eye.png"/><a href="#step3"><span class="right_arrow">></span></a></div><div class="divresposta"><a href="#step3"><span class="aproove"></span></a><a href="#step3"><span class="reject"></span></a></div> </div>
-            </fieldset>
-            <fieldset class="step col-md-12" id="step3">
-              <div class="header form"><span class="esquerda">1. Máquinas</span>
-              <span class="direita">	<div class="sbn sbn02">
-                <ul>
-                  <li><a class="is-active" href="#">1</a></li>
-                  <li><a class="" href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">6</a></li>
-                  <li><a href="#">7</a></li>
-                  <li><a href="#">8</a></li>
-                  <li><a href="#">9</a></li>
-                </ul>
-      	</div></span></div>
-              <div class="tab_form"><div class="topo_img col-md-12"> 
-                <span class="questao">BOBINA DE TRAVÃO</span><br/>
-               <span class="questao_numero">1.1.3</span><br/>
-               <a href="#step2"><span class="left_arrow"><</span></a><img class="eye" src="img/formularios/eye.png"/><a href="#step1"><span class="right_arrow">></span></a>
-             </div>
-                <div class="divresposta"><a href="#step1"><span class="aproove"></span></a><a href="#step1"><span class="reject"></span></a></div> </div>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-      </div>
-   
-       
-    <!-- End Page -->
+<!--- LINHA 2 !-->
+                  <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">Elevador: </label>
+                          <div class="checkbox-custom checkbox-default checkbox-inline col-md-2">
+                            <label for="inputhabitcao">1</label>
+                            <input type="checkbox" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="checkbox-custom checkbox-default checkbox-inline col-md-2">
+                            <label for="inputmisto">2</label>
+                            <input type="checkbox" id="inputmisto" name="inputedificio" />    
+                          </div>
+                             <div class="checkbox-custom checkbox-default checkbox-inline col-md-2">
+                            <label for="inputcomercial">Assistência de Rotina</label>
+                            <input type="checkbox" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                           <div class="checkbox-custom checkbox-default checkbox-inline col-md-2">
+                            <label for="inputcomercial">Elevador Parado</label>
+                            <input type="checkbox" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                           <div class="checkbox-custom checkbox-default checkbox-inline col-md-2">
+                            <label for="inputcomercial">Avaria</label>
+                            <input type="checkbox" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                           <div class="checkbox-custom checkbox-default checkbox-inline col-md-2">
+                            <label for="inputcomercial">Elevador em funcionamento</label>
+                            <input type="checkbox" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                           <div class="checkbox-custom checkbox-default checkbox-inline col-md-2">
+                            <label for="inputcomercial">Propôr Reparação</label>
+                            <input type="checkbox" id="inputcomercial" name="inputcomercial" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
 
+ <!--- PRÉ-LINHA 3 !-->    
+<hr/>
+<br/>
+<h4> Manutenção Preventiva - Edifício </h4>
+<br/>
+ <!--- LINHA 3 !--> 
+<div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">1. Validade Extintores </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sim</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+ <!--- LINHA 4 !-->    
+<div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">2. Portões de Acesso </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sim</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+ <!--- LINHA 5 !-->    
+<div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">3. Iluminação </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sim</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                    </div>
+ <!--- LINHA 6 !-->    
+<div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">4. Luz de Emergência </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sim</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+ <!--- LINHA 7 !-->    
+<div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">5. Bombas / Funcionamento </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sim</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+ <!--- LINHA 8 !-->    
+<div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">6. Antena Coletiva </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sim</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+ <!--- LINHA 9 !-->    
+<div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-12">                   
+                       <div>
+                       <label class="form-control-label col-md-2" for="label">7. Outros </label>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputhabitcao">Sim</label>
+                            <input type="radio" id="inputhabitcao" name="inputedificio" />
+                          </div>
+                          <div class="radio-custom radio-default radio-inline col-md-2">
+                            <label for="inputmisto">Não</label>
+                            <input type="radio" id="inputmisto" name="inputedificio" />    
+                          </div>
+                        </div>  
+                     </div>
+                  </div>
+
+  <!--- LINHA 10 !-->    
+<div class="form-group form-material row" data-plugin="formMaterial">
+                   <div class="col-md-10"> <label class="form-control-label" for="inputText">
+                    </label>
+                    <input type="number" class="form-control" id="inputText" name="inputText" placeholder="Trabalhos Executados" />
+                    </div>
+                  </div>
+             
+
+                  </div> 
+
+  </div>
+  </form>
+    <!-- End Page -->
+</div>
 
     <!-- Footer -->
-        <footer class="site-footer">       
+    <footer class="site-footer">       
       <div class="site-footer-legal">© 2018. made by Webexperts</div>
     </footer>
-  
     <!-- Core  -->
-   <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/popper-js/umd/popper.min.js"></script>
     <script src="vendor/bootstrap/bootstrap.js"></script>
