@@ -323,81 +323,7 @@
         </div>
       </div>
     
-      <div class="site-menubar-footer">
-          <div class="site-menubar-section">
-              <h5>
-                Metas
-                <span class="float-right">40%</span>
-              </h5>
-              <div class="progress progress-xs">
-                <div class="progress-bar active" style="width: 30%;" role="progressbar"></div>
-              </div></div>
-        <a href="javascript: void(0);" class="fold-show" data-placement="top" data-toggle="tooltip"
-          data-original-title="Settings">
-          <span class="icon md-settings" aria-hidden="true"></span>
-        </a>
-        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Lock">
-          <span class="icon md-eye-off" aria-hidden="true"></span>
-        </a>
-        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
-          <span class="icon md-power" aria-hidden="true"></span>
-        </a>
-      </div></div>    <div class="site-gridmenu">
-      <div>
-        <div>
-          <ul>
-            <li>
-              <a href="apps/mailbox/mailbox.html">
-                <i class="icon md-email"></i>
-                <span>Mailbox</span>
-              </a>
-            </li>
-            <li>
-              <a href="apps/calendar/calendar.html">
-                <i class="icon md-calendar"></i>
-                <span>Calendar</span>
-              </a>
-            </li>
-            <li>
-              <a href="apps/contacts/contacts.html">
-                <i class="icon md-account"></i>
-                <span>Contacts</span>
-              </a>
-            </li>
-            <li>
-              <a href="apps/media/overview.html">
-                <i class="icon md-videocam"></i>
-                <span>Media</span>
-              </a>
-            </li>
-            <li>
-              <a href="apps/documents/categories.html">
-                <i class="icon md-receipt"></i>
-                <span>Documents</span>
-              </a>
-            </li>
-            <li>
-              <a href="apps/projects/projects.html">
-                <i class="icon md-image"></i>
-                <span>Project</span>
-              </a>
-            </li>
-            <li>
-              <a href="apps/forum/forum.html">
-                <i class="icon md-comments"></i>
-                <span>Forum</span>
-              </a>
-            </li>
-            <li>
-              <a href="index.html">
-                <i class="icon md-view-dashboard"></i>
-                <span>Dashboard</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      
 
 
         <!-- Page -->
@@ -434,7 +360,7 @@
              <div class="tab_form"> <div class="topo_img col-md-12">
                <span class="questao">SUJIDADE</span><br/>
                <span class="questao_numero">1.1.1</span><br/>
-               <img class="eye" src="img/formularios/eye.png"/>
+              <a href="#step3"><span class="left_arrow"><</span></a><img class="eye" src="img/formularios/eye.png"/><a href="#step2"><span class="right_arrow">></span></a>
                </div><div class="divresposta">   <a href="#step2"><span class="aproove"></span></a><a href="#step2"><span class="reject"></span></a></div> </div>
             </fieldset>
             <fieldset class="step col-md-12" id="step2"><div class="header form"><span class="esquerda">1. Máquinas</span><span class="direita">	<div class="sbn sbn02">
@@ -453,7 +379,7 @@
               <div class="tab_form"><div class="topo_img col-md-12">
                  <span class="questao">PEÇAS PARTIDAS</span><br/>
                <span class="questao_numero">1.1.2</span><br/>
-               <img class="eye" src="img/formularios/eye.png"/></div><div class="divresposta"><a href="#step3"><span class="aproove"></span></a><a href="#step3"><span class="reject"></span></a></div> </div>
+               <a href="#step1"><span class="left_arrow"><</span></a><img class="eye" src="img/formularios/eye.png"/><a href="#step3"><span class="right_arrow">></span></a></div><div class="divresposta"><a href="#step3"><span class="aproove"></span></a><a href="#step3"><span class="reject"></span></a></div> </div>
             </fieldset>
             <fieldset class="step col-md-12" id="step3">
               <div class="header form"><span class="esquerda">1. Máquinas</span>
@@ -473,11 +399,13 @@
               <div class="tab_form"><div class="topo_img col-md-12"> 
                 <span class="questao">BOBINA DE TRAVÃO</span><br/>
                <span class="questao_numero">1.1.3</span><br/>
-               <img class="eye" src="img/formularios/eye.png"/></div><div class="divresposta"><a href="#step1"><span class="aproove"></span></a><a href="#step1"><span class="reject"></span></a></div> </div>
-            
+               <a href="#step2"><span class="left_arrow"><</span></a><img class="eye" src="img/formularios/eye.png"/><a href="#step1"><span class="right_arrow">></span></a>
+             </div>
+                <div class="divresposta"><a href="#step1"><span class="aproove"></span></a><a href="#step1"><span class="reject"></span></a></div> </div>
             </fieldset>
           </form>
         </div>
+      </div>
       </div>
    
        
@@ -485,9 +413,12 @@
 
 
     <!-- Footer -->
+        <footer class="site-footer">       
+      <div class="site-footer-legal">© 2018. made by Webexperts</div>
+    </footer>
   
     <!-- Core  -->
-    <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
+   <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/popper-js/umd/popper.min.js"></script>
     <script src="vendor/bootstrap/bootstrap.js"></script>
@@ -503,10 +434,12 @@
     <script src="vendor/intro-js/intro.js"></script>
     <script src="vendor/screenfull/screenfull.js"></script>
     <script src="vendor/slidepanel/jquery-slidePanel.js"></script>
-        <script src="vendor/formvalidation/formValidation.js"></script>
-        <script src="vendor/formvalidation/framework/bootstrap.js"></script>
+        <script src="vendor/chartist/chartist.min.js"></script>
+        <script src="vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script>
+        <script src="vendor/jvectormap/jquery-jvectormap.min.js"></script>
+        <script src="vendor/jvectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
         <script src="vendor/matchheight/jquery.matchHeight-min.js"></script>
-        <script src="vendor/jquery-wizard/jquery-wizard.js"></script>
+        <script src="vendor/peity/jquery.peity.min.js"></script>
     
     <!-- Scripts -->
     <script src="js/Component.js"></script>
@@ -525,15 +458,15 @@
     <script>Config.set('assets', 'assets');</script>
     
     <!-- Page -->
-    <script src="js/bullets.js"/></script>
     <script src="assets/js/Site.js"></script>
     <script src="js/Plugin/asscrollable.js"></script>
     <script src="js/Plugin/slidepanel.js"></script>
     <script src="js/Plugin/switchery.js"></script>
-        <script src="js/Plugin/jquery-wizard.js"></script>
         <script src="js/Plugin/matchheight.js"></script>
-
-        <script src="assets/examples/js/forms/wizard.js"></script>
+        <script src="js/Plugin/jvectormap.js"></script>
+        <script src="js/Plugin/peity.js"></script>
+    
+        <script src="assets/examples/js/dashboard/v1.js"></script>
     
   </body>
 </html>
