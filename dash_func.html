@@ -1,4 +1,4 @@
-
+ 
 <!DOCTYPE html>
 <html class="no-js css-menubar" lang="en">
   <head>
@@ -8,15 +8,15 @@
     <meta name="description" content="bootstrap material admin template">
     <meta name="author" content="">
     
-    <title>Dashboard</title>
+    <title>Inspeção e Visita ao Elevador</title>
     
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    
-    <!--  Fusion Estilos -->
 
+    <!-- Estilos fusion -->
+    <link rel="stylesheet" href="scss/ficha.css">
     <link rel="stylesheet" href="scss/dashboard.css">
-
+    <link rel="stylesheet" href="css/funcionarios.css">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -31,10 +31,8 @@
     <link rel="stylesheet" href="vendor/slidepanel/slidePanel.css">
     <link rel="stylesheet" href="vendor/flag-icon-css/flag-icon.css">
     <link rel="stylesheet" href="vendor/waves/waves.css">
-        <link rel="stylesheet" href="vendor/chartist/chartist.css">
-        <link rel="stylesheet" href="vendor/jvectormap/jquery-jvectormap.css">
-        <link rel="stylesheet" href="vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
-        <link rel="stylesheet" href="assets/examples/css/dashboard/v1.css">
+        <link rel="stylesheet" href="vendor/jquery-wizard/jquery-wizard.css">
+        <link rel="stylesheet" href="vendor/formvalidation/formValidation.css">
     
     
     <!-- Fonts -->
@@ -47,7 +45,7 @@
       Breakpoints();
     </script>
   </head>
-  <body class="animsition dashboard">
+ <body class="animsition dashboard">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -60,9 +58,9 @@
           <span class="sr-only">Toggle navigation</span>
           <span class="hamburger-bar"></span>
         </button>
-        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
-          data-toggle="collapse">
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"  data-toggle="collapse">
           <i class="icon md-more" aria-hidden="true"></i>
+          
         </button>
         <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
           <img class="navbar-brand-logo" src="img/logo.png" title="">
@@ -217,7 +215,7 @@
       <div class="site-menubar-body">
         <div>
           <div>
-            <ul class="site-menu" data-plugin="menu">
+           <ul class="site-menu" data-plugin="menu">
               <li class="site-menu-category">Homepage</li>
               <li class="site-menu-item has-sub">
               </li>
@@ -319,259 +317,52 @@
         </div>
       </div>
     
-  
-
-    <!-- Page -->
-    <div class="page">
-      <div class="page-content container-fluid">
-        <div class="row" data-plugin="matchHeight" data-by-row="true">
-          <div class="col-xl-3 col-md-6">
-            <!-- Widget Linearea One-->
-            <div class="card card-shadow" id="widgetLineareaOne">
-              <div class="card-block p-20 pt-10">
-                <div class="clearfix">
-                  <div class="grey-800 float-left py-10">
-                    <i class="icon md-account grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    Clientes
-                  </div>
-                  <span class="float-right grey-700 font-size-30">1,253</span>
-                </div>
-                <div class="mb-20 grey-500">
-                  <i class="icon md-long-arrow-up green-500 font-size-16"></i>                  15% desde ontem
-                </div>
-                <div class="ct-chart h-50"></div>
-              </div>
-            </div>
-            <!-- End Widget Linearea One -->
+</div>   
+<!-- Template -->
+<script id="some-template" type="text/x-handlebars-template">
+<div class="block-container">
+  <div class="block-header">
+    <h3>Tasks</h3>
+  </div>
+  <div class="block-content">
+    {{#each tasks}}
+    <div class="task-row">
+      <div class="priority {{priority}}">
+        <a tooltip="Task priority" class="tooltip">{{priority}}</a>
+      </div>
+      <div class="task-title">
+        <h4>{{title}}</h4>
+        <h5>{{description}}</h5>
+      </div>
+      <div class="task-status">
+        <div class="status-bar">
+          <div class="status-track">
+            <span class="status-text">{{status}}</span>
+            <div class="status-fill" style="width:{{status}}"></div>
           </div>
-          <div class="col-xl-3 col-md-6">
-            <!-- Widget Linearea Two -->
-            <div class="card card-shadow" id="widgetLineareaTwo">
-              <div class="card-block p-20 pt-10">
-                <div class="clearfix">
-                  <div class="grey-800 float-left py-10">
-                    <i class="icon md-flash grey-600 font-size-24 vertical-align-bottom mr-5"></i>                   Total de Inspecções
-                  </div>
-                  <span class="float-right grey-700 font-size-30">5794</span>
-                </div>
-                <div class="mb-20 grey-500">                
-                </div>
-                <div class="ct-chart h-50"></div>
-              </div>
-            </div>
-            <!-- End Widget Linearea Two -->
-          </div>
-          <div class="col-xl-3 col-md-6">
-            <!-- Widget Linearea Three -->
-            <div class="card card-shadow" id="widgetLineareaThree">
-              <div class="card-block p-20 pt-10">
-                <div class="clearfix">
-                  <div class="grey-800 float-left py-10">
-                    <i class="icon md-chart grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    Taxa de sucesso
-                  </div>
-                  <span class="float-right grey-700 font-size-30">80%</span>
-                </div>
-                <div class="mb-20 grey-500">
-                  <i class="icon md-long-arrow-up green-500 font-size-16"></i>                  3% desde ontem
-                </div>
-                <div class="ct-chart h-50"></div>
-              </div>
-            </div>
-            <!-- End Widget Linearea Three -->
-          </div>
-          <div class="col-xl-3 col-md-6">
-            <!-- Widget Linearea Four -->
-            <div class="card card-shadow" id="widgetLineareaFour">
-              <div class="card-block p-20 pt-10">
-                <div class="clearfix">
-                  <div class="grey-800 float-left py-10">
-                    <i class="icon md-view-list grey-600 font-size-24 vertical-align-bottom mr-5"></i>                    Inspecções por dia                  </div>
-                  <span class="float-right grey-700 font-size-30">1253</span>
-                </div>
-                <div class="mb-20 grey-500">
-                  <i class="icon md-long-arrow-down red-500 font-size-16"></i>                  -7% desde ontem
-                </div>
-                <div class="ct-chart h-50"></div>
-              </div>
-            </div>
-            <!-- End Widget Linearea Four -->
-          </div>
-          <div class="col-xxl-6 col-lg-6">
-            <!-- Panel Projects -->
-            <div class="panel" id="projects">
-              <div class="panel-heading">
-                <h3 class="panel-title">Estado do Inspecções</h3>
-              </div>
-              <div class="table-responsive">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <td>ID</td>
-                      <td>Nome</td>
-                      <td>Funcionário</td>
-                      <td>Estado</td>
-                      <td>Data</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>203</td>
-                        <td>
-                        Soliflan
-                      </td><td>
-                         <span class="avatar avatar-online">
-                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span>
-                  <i></i>
-                </span></td>
-                      <td>
-                        <span class="badge badge-primary">No terreno</span>
-                      </td>
-                      <td>18.05</td>
-                     
-                    </tr>
-                    
-                  </tbody>
-                      <tbody>
-                    <tr>
-                      <td>203</td>
-                        <td>
-                        Soliflan
-                      </td><td>
-                         <span class="avatar avatar-online">
-                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span>
-                  <i></i>
-                </span></td>
-                      <td>
-                        <span class="badge badge-primary">No terreno</span>
-                      </td>
-                      <td>18.05</td>
-                     
-                    </tr>
-                    
-                  </tbody>
-                      <tbody>
-                    <tr>
-                      <td>203</td>
-                        <td>
-                        Soliflan
-                      </td><td>
-                         <span class="avatar avatar-online">
-                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span>
-                  <i></i>
-                </span></td>
-                      <td>
-                        <span class="badge badge-primary">No terreno</span>
-                      </td>
-                      <td>18.05</td>
-                     
-                    </tr>
-                    
-                  </tbody>
-                      <tbody>
-                    <tr>
-                      <td>203</td>
-                        <td>
-                        Soliflan
-                      </td><td>
-                         <span class="avatar avatar-online">
-                   <img src="portraits/5.jpg" alt="..."> <span class="funcionario">Mário</span> 
-                  <i></i>
-                </span></td>
-                      <td>
-                        <span class="badge badge-primary">No terreno</span>
-                      </td>
-                      <td>18.05</td>              
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!-- End Panel Projects -->
-          </div>
-
-          <div class="col-xxl-6 col-lg-6">
-            <!-- Panel Projects Status -->
-            <div class="panel" id="projects-status">
-              <div class="panel-heading">
-                <h3 class="panel-title">
-                  Próximas Inspecções
-                  <span class="badge badge-pill badge-info">5</span>
-                </h3>
-              </div>
-              <div class="table-responsive">
-                <table class="table table-striped proximas">
-                  <thead>
-                    <tr>
-                      <td>ID</td>
-                      <td>Nome</td>
-                      <td>Funcionário</td>
-                      <td>Data</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>203</td>
-                        <td>
-                        Soliflan
-                      </td><td>
-                          <span>Mário</span>
-               </td>
-                    
-                      <td>18.05</td>              
-                    </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td>203</td>
-                        <td>
-                        Soliflan
-                      </td><td>
-                          <span>Mário</span>
-               </td>
-                    
-                      <td>18.05</td>              
-                    </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td>203</td>
-                        <td>
-                        Soliflan
-                      </td><td>
-                          <span>Mário</span>
-               </td>
-                    
-                      <td>18.05</td>              
-                    </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td>203</td>
-                        <td>
-                        Soliflan
-                      </td><td>
-                          <span>Mário</span>
-               </td>
-                    
-                      <td>18.05</td>              
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <!-- End Panel Projects Stats -->
-          </div>
-
         </div>
       </div>
+      <div class="task-time"><a  tooltip="Time remaining ( total / used )" class="tooltip">{{calcRemaining}} <small>( {{timeUsed}} / {{timeTotal}} )</small></a></div>
     </div>
-    <!-- End Page -->
+    {{/each}}
+  </div>
+</div>
+</script> <!-- end template -->
 
 
-    <!-- Footer -->
-  <footer class="site-footer">       
+
+<!-- Output --> 
+<div id="content-placeholder"></div>
+
+
+          </div></div>
+          
+          
+              <footer class="site-footer">       
       <div class="site-footer-legal">© 2018. made by Webexperts</div>
     </footer>
     <!-- Core  -->
+        <script src="js/funcionarios.js"></script>
     <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/popper-js/umd/popper.min.js"></script>
@@ -582,6 +373,9 @@
     <script src="vendor/asscrollable/jquery-asScrollable.js"></script>
     <script src="vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
     <script src="vendor/waves/waves.js"></script>
+    <script src="js\handlebars.min.js"></script>
+    <script src="js\jquery.min.js"></script>
+
     
     <!-- Plugins -->
     <script src="vendor/switchery/switchery.js"></script>
@@ -621,6 +415,8 @@
         <script src="js/Plugin/peity.js"></script>
     
         <script src="assets/examples/js/dashboard/v1.js"></script>
-    
-  </body>
-</html>
+          
+          
+          
+          </body>
+          </html>
