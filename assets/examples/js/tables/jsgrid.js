@@ -90,34 +90,29 @@
       pageSize: 15,
       pageButtonCount: 5,
 
-      deleteConfirm: "Do you really want to delete the client?",
+      deleteConfirm: "Quer apagar a ficha do cliente?",
 
       controller: db,
 
       fields: [{
-        name: "Name",
+        name: "Nome",
         type: "text",
         width: 150
       }, {
-        name: "Age",
-        type: "number",
-        width: 70
-      }, {
-        name: "Address",
+        name: "Morada",
         type: "text",
         width: 200
       }, {
-        name: "Country",
-        type: "select",
-        items: db.countries,
-        valueField: "Id",
-        textField: "Name"
-      }, {
-        name: "Married",
-        type: "checkbox",
-        title: "Is Married",
-        sorting: false
-      }, {
+        name: "Data de registo",
+        type: "number",
+        width: 200
+      }
+      ,{
+        name: "Contrato",
+        type: "date",
+        width: 200
+      }
+      , {
         type: "control"
       }]
     });
@@ -329,28 +324,23 @@
       controller: db,
 
       fields: [{
-        name: "Name",
-        type: "text",
-        width: 150
-      }, {
-        name: "Age",
-        type: "number",
-        width: 70
-      }, {
-        name: "Address",
+        name: "Nome",
         type: "text",
         width: 200
       }, {
-        name: "Country",
+        name: "Morada",
+        type: "text",
+        width: 200
+      }, {
+        name: "Data de Registo",
+        type: "date",
+        width: 100
+      }, {
+        name: "Localização",
         type: "select",
         items: db.countries,
         valueField: "Id",
         textField: "Name"
-      }, {
-        name: "Married",
-        type: "checkbox",
-        title: "Is Married",
-        sorting: false
       }, {
         type: "control",
         modeSwitchButton: false,

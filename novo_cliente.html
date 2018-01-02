@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="vendor/waves/waves.css">
         <link rel="stylesheet" href="vendor/jquery-wizard/jquery-wizard.css">
         <link rel="stylesheet" href="vendor/formvalidation/formValidation.css">
+        <link rel="stylesheet" href="vendor/bootstrap-datepicker/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="assets/examples/css/tables/jsgrid.css">
     
     
     <!-- Fonts -->
@@ -318,45 +320,26 @@
       </div>
     
 </div>   
-<!-- Template -->
-dasadas
-<script id="some-template" type="text/x-handlebars-template">
-<div class="block-container">
-  <div class="block-header">
-    <h3>Tasks</h3>
-  </div>
-  <div class="block-content">
-    {{#each tasks}}
-    <div class="task-row">
-      <div class="priority {{priority}}">
-        <a tooltip="Task priority" class="tooltip">{{priority}}</a>
-      </div>
-      <div class="task-title">
-        <h4>{{title}}</h4>
-        <h5>{{description}}</h5>
-      </div>
-      <div class="task-status">
-        <div class="status-bar">
-          <div class="status-track">
-            <span class="status-text">{{status}}</span>
-            <div class="status-fill" style="width:{{status}}"></div>
+<!-- Template <--></-->
+<div class="page-content container-fluid container">
+        <div class="row">
+          <div class="col-xxl-12">
+            <!-- Panel Basic -->
+            <div class="panel">
+              <header class="panel-heading">
+                <h3 class="panel-title">Editar ficha de clientes</h3>
+              </header>
+              <div class="panel-body">
+                <div id="exampleBasic"></div>
+              </div>
+            </div>
+        <!-- End Panel Basic -->
           </div>
-        </div>
-      </div>
-      <div class="task-time"><a  tooltip="Time remaining ( total / used )" class="tooltip">{{calcRemaining}} <small>( {{timeUsed}} / {{timeTotal}} )</small></a></div>
-    </div>
-    {{/each}}
-  </div>
-</div>
-</script> <!-- end template -->
-
-
-
 <!-- Output --> 
 <div id="content-placeholder"></div>
 
-
           </div></div>
+        
           
           
               <footer class="site-footer">       
@@ -404,6 +387,48 @@ dasadas
     
     <script src="js/config/colors.js"></script>
     <script src="assets/js/config/tour.js"></script>
+            <script src="assets/examples/js/tables/jsgrid-db.js"></script>
+        <script src="assets/examples/js/tables/jsgrid.js"></script>
+    <script>Config.set('assets', 'assets');</script>
+    
+    <!-- Page -->
+  
+    
+        <script src="assets/examples/js/dashboard/v1.js"></script>
+        <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/popper-js/umd/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.js"></script>
+    <script src="vendor/animsition/animsition.js"></script>
+    <script src="vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="vendor/waves/waves.js"></script>
+    
+    <!-- Plugins -->
+    <script src="vendor/switchery/switchery.js"></script>
+    <script src="vendor/intro-js/intro.js"></script>
+    <script src="vendor/screenfull/screenfull.js"></script>
+    <script src="vendor/slidepanel/jquery-slidePanel.js"></script>
+        <script src="vendor/jsgrid/jsgrid.js"></script>
+        <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+        <script src="vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/Component.js"></script>
+    <script src="js/Plugin.js"></script>
+    <script src="js/Base.js"></script>
+    <script src="js/Config.js"></script>
+    
+    <script src="assets/js/Section/Menubar.js"></script>
+    <script src="assets/js/Section/GridMenu.js"></script>
+    <script src="assets/js/Section/Sidebar.js"></script>
+    <script src="assets/js/Section/PageAside.js"></script>
+    <script src="assets/js/Plugin/menu.js"></script>
+    
+    <script src="js/config/colors.js"></script>
+    <script src="assets/js/config/tour.js"></script>
     <script>Config.set('assets', 'assets');</script>
     
     <!-- Page -->
@@ -411,11 +436,9 @@ dasadas
     <script src="js/Plugin/asscrollable.js"></script>
     <script src="js/Plugin/slidepanel.js"></script>
     <script src="js/Plugin/switchery.js"></script>
-        <script src="js/Plugin/matchheight.js"></script>
-        <script src="js/Plugin/jvectormap.js"></script>
-        <script src="js/Plugin/peity.js"></script>
     
-        <script src="assets/examples/js/dashboard/v1.js"></script>
+        <script src="assets/examples/js/tables/jsgrid-db.js"></script>
+        <script src="assets/examples/js/tables/jsgrid.js"></script>
           
           
           
