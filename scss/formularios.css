@@ -57,6 +57,15 @@ form.wizard.container {
   margin-left: 0px;
   padding-left: 0px; }
 
+.criterio {
+  color: #ffffff;
+  text-align: center;
+  top: 33.3333333333%;
+  position: relative;
+  font-size: large;
+  padding-right: 4%;
+  padding-left: 4%; }
+
 body {
   overflow-x: hidden; }
 

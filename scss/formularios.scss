@@ -26,7 +26,15 @@ form.wizard.container {
     margin-left: 0px;
     padding-left: 0px;
 }
-
+.criterio{
+        color: $cor-acesssoria;
+    text-align: center;
+    top: 33.3333333333%;
+    position: relative;
+    font-size: large;
+    padding-right: $container/2;
+    padding-left: $container/2;
+}
 body {
         overflow-x: hidden;
 }
@@ -134,6 +142,7 @@ span.reject{
     position: relative;
   
 }
+
 
 span.right_arrow {
     color: $cor-acesssoria;
