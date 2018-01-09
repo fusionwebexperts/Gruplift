@@ -1,0 +1,26 @@
+@import 'stylesheet';
+
+$margin: 50px;
+
+h1,h2,h3,h4,h5,h6 {
+color: $cor-acesssoria !important;
+}
+.dash{
+    margin-top: $margin;
+}
+.site-menubar {
+    display: none;
+}
+.site-menubar-unfold .page, .site-menubar-unfold .site-footer {
+    margin-left: 0px !important;
+}
+.site-menubar-fold .page, .site-menubar-fold .site-footer {
+    margin-left: 0px !important;
+}
+.font-size-17{
+margin-top: $margin/5;
+}
+a:hover {
+    color: gray!important;
+    text-decoration: none !important;
+}

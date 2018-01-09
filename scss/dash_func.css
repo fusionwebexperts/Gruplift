@@ -1,0 +1,68 @@
+/** CORES TEMA **/
+/** TAMANHO DE FONT DO TEMA **/
+/** TIPO DE FONT DO TEMA **/
+/**Titulos**/
+h1 {
+  font-size: 1.99998em; }
+
+h2 {
+  font-size: 1.66665em; }
+
+h3 {
+  font-size: 1.33332em; }
+
+h4 {
+  font-size: 0.99999em; }
+
+h5 {
+  font-size: 0.66666em; }
+
+h6 {
+  font-size: 0.33333em; }
+
+/*** Cores dos Links ***/
+a {
+  color: #1c87c3; }
+  a:visited {
+    color: #0D537B; }
+  a:hover {
+    color: #0D537B; }
+  a:active {
+    color: #0D537B; }
+
+.btn-primary {
+  background-color: #1c87c3 !important;
+  color: #ffffff; }
+  .btn-primary:visited {
+    background-color: #0D537B !important;
+    color: #ffffff; }
+  .btn-primary:hover {
+    background-color: #0D537B !important;
+    color: #ffffff; }
+  .btn-primary:active {
+    background-color: #0D537B !important;
+    color: #ffffff; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important; }
+
+.dash {
+  margin-top: 50px; }
+
+.site-menubar {
+  display: none; }
+
+.site-menubar-unfold .page, .site-menubar-unfold .site-footer {
+  margin-left: 0px !important; }
+
+.site-menubar-fold .page, .site-menubar-fold .site-footer {
+  margin-left: 0px !important; }
+
+.font-size-17 {
+  margin-top: 10px; }
+
+a:hover {
+  color: gray !important;
+  text-decoration: none !important; }
+
+/*# sourceMappingURL=dash_func.css.map */
