@@ -3,59 +3,85 @@
 /** TIPO DE FONT DO TEMA **/
 /**Titulos**/
 h1 {
-  font-size: 1.99998em; }
+  font-size: 1.99998em;
+}
 
 h2 {
-  font-size: 1.66665em; }
+  font-size: 1.66665em;
+}
 
 h3 {
-  font-size: 1.33332em; }
+  font-size: 1.33332em;
+}
 
 h4 {
-  font-size: 0.99999em; }
+  font-size: 0.99999em;
+}
 
 h5 {
-  font-size: 0.66666em; }
+  font-size: 0.66666em;
+}
 
 h6 {
-  font-size: 0.33333em; }
+  font-size: 0.33333em;
+}
 
 /*** Cores dos Links ***/
 a {
-  color: #1c87c3; }
-  a:visited {
-    color: #0D537B; }
-  a:hover {
-    color: #0D537B; }
-  a:active {
-    color: #0D537B; }
+  color: #1c87c3;
+}
+
+a:visited {
+  color: #0D537B;
+}
+
+a:hover {
+  color: #0D537B;
+}
+
+a:active {
+  color: #0D537B;
+}
 
 .btn-primary {
   background-color: #1c87c3 !important;
-  color: #ffffff; }
-  .btn-primary:visited {
-    background-color: #0D537B !important;
-    color: #ffffff; }
-  .btn-primary:hover {
-    background-color: #0D537B !important;
-    color: #ffffff; }
-  .btn-primary:active {
-    background-color: #0D537B !important;
-    color: #ffffff; }
+  color: #ffffff;
+}
+
+.btn-primary:visited {
+  background-color: #0D537B !important;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #0D537B !important;
+  color: #ffffff;
+}
+
+.btn-primary:active {
+  background-color: #0D537B !important;
+  color: #ffffff;
+}
 
 .site-navbar {
-  background-color: #ffffff !important; }
+  background-color: #ffffff !important;
+}
 
 .titulo {
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 @media all and (min-width: 768px) {
   .navbar-right, .btn-primary {
     float: right;
-    margin-right: 1em !important; } }
+    margin-right: 1em !important;
+  }
+}
+
 form.wizard.container {
   margin-left: 0px;
-  padding-left: 0px; }
+  padding-left: 0px;
+}
 
 .criterio {
   color: #ffffff;
@@ -64,33 +90,40 @@ form.wizard.container {
   position: relative;
   font-size: large;
   padding-right: 4%;
-  padding-left: 4%; }
+  padding-left: 4%;
+}
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 .wizard {
-  padding-top: 1em; }
+  padding-top: 1em;
+}
 
 .step {
   margin-right: 8% !important;
   border: none;
-  background-color: #f1f4f5 !important; }
+  background-color: #f1f4f5 !important;
+}
 
 .step[id] {
   position: absolute;
   transition: left .5s ease-out;
   transform: translateZ(0);
-  padding-right: 10%; }
+  padding-right: 10%;
+}
 
 .step:not(:target) {
   left: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 .step:first-child,
 .step:target {
-  padding: 0 0em; }
+  padding: 0 0em;
+}
 
 .topo_img {
   background-image: url("../img/formularios/question.png");
@@ -100,18 +133,22 @@ body {
   min-height: 300px;
   padding-left: 1.0715rem;
   margin-right: 50px !important;
-  text-align: center; }
+  text-align: center;
+}
 
 .step[id] {
   max-width: 668px;
-  padding-right: 10%; }
+  padding-right: 10%;
+}
 
 .header.form {
-  margin-bottom: 1em !important; }
+  margin-bottom: 1em !important;
+}
 
 /****FORMULARIO **/
 .divresposta {
-  height: 9.8em !important; }
+  height: 9.8em !important;
+}
 
 span.questao {
   color: #fff;
@@ -120,24 +157,29 @@ span.questao {
   font-weight: 400;
   letter-spacing: 5px;
   top: 25%;
-  position: relative; }
+  position: relative;
+}
 
 span.direita {
-  float: right; }
+  float: right;
+}
 
 span.esquerda {
   color: black;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 span.aproove, span.reject {
   background-image: url("../img/formularios/aprovado.png");
   display: inline-block;
   width: 50%;
   height: 100%;
-  background-size: contain; }
+  background-size: contain;
+}
 
 span.reject {
-  background-image: url("../img/formularios/reprovado.png"); }
+  background-image: url("../img/formularios/reprovado.png");
+}
 
 .questao_numero {
   color: #fff;
@@ -145,34 +187,37 @@ span.reject {
   font-size: 16px;
   letter-spacing: 5px;
   top: 28%;
-  position: relative; }
+  position: relative;
+}
 
 .eye {
   color: #fff;
   text-align: center;
-  top: 33.3333333333%;
-  position: relative; }
+  top: 33.33333%;
+  position: relative;
+}
 
 span.right_arrow {
   color: #ffffff;
   text-align: center;
-  top: 33.3333333333%;
+  top: 33.33333%;
   position: relative;
   font-size: xx-large;
   border: 4px solid #fff;
   padding-right: 4%;
   padding-left: 4%;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 span.left_arrow {
   color: #ffffff;
   text-align: center;
-  top: 33.3333333333%;
+  top: 33.33333%;
   position: relative;
   font-size: xx-large;
   padding-left: 4%;
   padding-right: 4%;
   font-weight: 500;
-  border: 4px solid #fff; }
-
+  border: 4px solid #fff;
+}
 /*# sourceMappingURL=formularios.css.map */

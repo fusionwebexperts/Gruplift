@@ -3,51 +3,72 @@
 /** TIPO DE FONT DO TEMA **/
 /**Titulos**/
 h1 {
-  font-size: 1.99998em; }
+  font-size: 1.99998em;
+}
 
 h2 {
-  font-size: 1.66665em; }
+  font-size: 1.66665em;
+}
 
 h3 {
-  font-size: 1.33332em; }
+  font-size: 1.33332em;
+}
 
 h4 {
-  font-size: 0.99999em; }
+  font-size: 0.99999em;
+}
 
 h5 {
-  font-size: 0.66666em; }
+  font-size: 0.66666em;
+}
 
 h6 {
-  font-size: 0.33333em; }
+  font-size: 0.33333em;
+}
 
 /*** Cores dos Links ***/
 a {
-  color: #1c87c3; }
-  a:visited {
-    color: #0D537B; }
-  a:hover {
-    color: #0D537B; }
-  a:active {
-    color: #0D537B; }
+  color: #1c87c3;
+}
+
+a:visited {
+  color: #0D537B;
+}
+
+a:hover {
+  color: #0D537B;
+}
+
+a:active {
+  color: #0D537B;
+}
 
 .btn-primary {
   background-color: #1c87c3 !important;
-  color: #ffffff; }
-  .btn-primary:visited {
-    background-color: #0D537B !important;
-    color: #ffffff; }
-  .btn-primary:hover {
-    background-color: #0D537B !important;
-    color: #ffffff; }
-  .btn-primary:active {
-    background-color: #0D537B !important;
-    color: #ffffff; }
+  color: #ffffff;
+}
+
+.btn-primary:visited {
+  background-color: #0D537B !important;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #0D537B !important;
+  color: #ffffff;
+}
+
+.btn-primary:active {
+  background-color: #0D537B !important;
+  color: #ffffff;
+}
 
 /***Background COVER***/
 /**Geral**/
 body {
   color: #000000;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 .fbg {
   background: url(../img/banner.jpg) no-repeat center center fixed;
@@ -55,6 +76,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: transparent !important; }
-
+  background-color: transparent !important;
+}
 /*# sourceMappingURL=login.css.map */
