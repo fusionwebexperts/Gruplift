@@ -111,7 +111,7 @@ body {
   position: absolute;
   transition: left .5s ease-out;
   transform: translateZ(0);
-  padding-right: 10%;
+  padding-right: 15%;
 }
 
 .step:not(:target) {
@@ -174,7 +174,8 @@ span.aproove, span.reject {
   display: inline-block;
   width: 50%;
   height: 100%;
-  background-size: contain;
+  background-size: cover !important;
+  background-position-x: center;
 }
 
 span.reject {
