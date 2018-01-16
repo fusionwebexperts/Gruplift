@@ -108,8 +108,8 @@
         width: 200
       }
       ,{
-        name: "Contrato",
-        type: "date",
+        name: "Equipamentos",
+        type: "read",
         width: 200
       }
       ]

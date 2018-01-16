@@ -1,0 +1,7 @@
+@import 'stylesheet';
+button {
+    color: $cor-acesssoria;
+    background-color: #ccc;
+    -webkit-appearance: caret !important;
+    width: 35%;
+}
