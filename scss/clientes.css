@@ -63,6 +63,8 @@ a:active {
   color: #ffffff;
 }
 
+/**** MARGINS ****/
+/**** BREAKPOINTS ****/
 button {
   color: #ffffff;
   background-color: #ccc;
@@ -70,28 +72,28 @@ button {
   width: 100% !important;
 }
 
+/***QUERY CONTAINER ***/
 .container-fluid {
   margin-left: 15% !important;
 }
 
-/***QUERY CONTAINER ***/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1600px) {
   .container-fluid {
-    margin-left: 0% !important;
-  }
-  button.navbar-toggler.collapsed {
-    display: none;
+    margin-left: 15% !important;
+    width: 75% !important;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 1381px) and (max-width: 1599px) {
   .container-fluid {
-    margin-left: 5% !important;
+    margin-left: 15% !important;
+    width: 75% !important;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) and (max-width: 1380px) {
   .container-fluid {
+    margin-left: 20% !important;
     width: 75% !important;
   }
 }
@@ -100,24 +102,17 @@ button {
   .container-fluid {
     margin-left: 5% !important;
   }
-  button.navbar-toggler.collapsed {
-    display: none;
+}
+
+@media screen and (min-width: 768px) and (991px) {
+  .container-fluid {
+    margin-left: 5% !important;
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1380px) {
+@media screen and (max-width: 767px) {
   .container-fluid {
-    margin-left: 20% !important;
-  }
-  button.navbar-toggler.collapsed {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .container-fluid {
-    margin-left: 15% !important;
-    width: 75% !important;
+    margin-left: 0% !important;
   }
 }
 
