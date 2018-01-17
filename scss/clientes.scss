@@ -1,36 +1,79 @@
 @import 'stylesheet';
+
 button {
     color: $cor-acesssoria;
     background-color: #ccc;
     -webkit-appearance: caret !important;
-    width: 100%;
+    width: 100% !important;    
 }
 .container-fluid {
     margin-left: 15% !important;
+      
 }
 /***QUERY CONTAINER ***/
 
-@media screen and (max-width: 767px) {
-      .container-fluid{  margin-left: 0% !important;}
-      button.navbar-toggler.collapsed {
-    display: none;
+@media screen and (max-width: 767px) 
+{
+ .container-fluid
+   { 
+     margin-left: 0% !important;
+   }
+  button.navbar-toggler.collapsed 
+   {
+     display: none;
+   }
 }
-    }
-@media screen and (min-width:768px) and (max-width: 991px) {
-      .container-fluid {  margin-left: 5% !important; }
-    }
-@media screen and (min-width: 992px) {
-       .container-fluid {  margin-left: 18% !important; }
-    }
- @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .container-fluid {     margin-left: 5% !important; }
-    button.navbar-toggler.collapsed {
-    display: none;
+
+@media screen and (min-width:768px) and (max-width: 991px) 
+{
+ .container-fluid 
+  {  
+     margin-left: 5% !important; 
+  }
 }
-    }
-.site-menubar-fold .site-menu>.site-menu-item>a .site-menu-title {
+
+@media screen and (min-width: 992px) 
+{
+ .container-fluid 
+  {  
+     width: 75% !important;
+  }
+}
+
+ @media screen and (min-width: 992px) and (max-width: 1199px) 
+{
+.container-fluid 
+  {     
+    margin-left: 5% !important; 
+  }
+button.navbar-toggler.collapsed 
+  {
+    display: none;
+  }
+}
+ @media screen and (min-width: 1200px) and (max-width: 1380px) 
+{
+.container-fluid 
+  {     
+    margin-left: 20% !important; 
+  }
+button.navbar-toggler.collapsed 
+  {
+    display: none;
+  }
+}
+
+ @media screen and (min-width: 1600px) 
+{
+.container-fluid 
+  {     
+    margin-left: 15% !important;  
+    width:75% !important;
+  }
+}
+.site-menubar-fold .site-menu>.site-menu-item>a .site-menu-title 
+{
     visibility: visible !important;
     opacity: 1 !important;
     color:rgba(117,117,117,.9) !important;
-
 }

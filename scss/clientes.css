@@ -67,7 +67,7 @@ button {
   color: #ffffff;
   background-color: #ccc;
   -webkit-appearance: caret !important;
-  width: 100%;
+  width: 100% !important;
 }
 
 .container-fluid {
@@ -92,7 +92,7 @@ button {
 
 @media screen and (min-width: 992px) {
   .container-fluid {
-    margin-left: 18% !important;
+    width: 75% !important;
   }
 }
 
@@ -102,6 +102,22 @@ button {
   }
   button.navbar-toggler.collapsed {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1380px) {
+  .container-fluid {
+    margin-left: 20% !important;
+  }
+  button.navbar-toggler.collapsed {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container-fluid {
+    margin-left: 15% !important;
+    width: 75% !important;
   }
 }
 
