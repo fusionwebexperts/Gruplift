@@ -67,6 +67,47 @@ button {
   color: #ffffff;
   background-color: #ccc;
   -webkit-appearance: caret !important;
-  width: 35%;
+  width: 100%;
+}
+
+.container-fluid {
+  margin-left: 15% !important;
+}
+
+/***QUERY CONTAINER ***/
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    margin-left: 0% !important;
+  }
+  button.navbar-toggler.collapsed {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container-fluid {
+    margin-left: 5% !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container-fluid {
+    margin-left: 18% !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container-fluid {
+    margin-left: 5% !important;
+  }
+  button.navbar-toggler.collapsed {
+    display: none;
+  }
+}
+
+.site-menubar-fold .site-menu > .site-menu-item > a .site-menu-title {
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: rgba(117, 117, 117, 0.9) !important;
 }
 /*# sourceMappingURL=clientes.css.map */
