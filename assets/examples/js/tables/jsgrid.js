@@ -81,8 +81,8 @@
       height: "500px",
       width: "100%",
 
-      filtering: true,
-      editing: true,
+      filtering: false,
+      editing: false,
       sorting: true,
       paging: true,
       autoload: true,
@@ -117,7 +117,7 @@
   })();
 
   // Example Static Data
-  // ----------------------------
+  // -------------------
   (function () {
     (0, _jquery2.default)('#exampleStaticData').jsGrid({
       height: "500px",
@@ -193,7 +193,7 @@
         width: 50,
         align: "center",
         itemTemplate: function itemTemplate(value) {
-          return (0, _jquery2.default)("<div>").addClass("rating text-nowrap").append(new Array(value + 1).join('<i class="icon md-star orange-600 mr-3"></i>'));
+          return (0, _jquery2.default)("<div>").addClass("rating text-nowrap").append(Array(value + 1).join('<i class="icon wb-star orange-600 mr-3"></i>'));
         }
       }, {
         name: "Price",
@@ -322,23 +322,28 @@
       controller: db,
 
       fields: [{
-        name: "Nome",
+        name: "Name",
+        type: "text",
+        width: 150
+      }, {
+        name: "Age",
+        type: "number",
+        width: 70
+      }, {
+        name: "Address",
         type: "text",
         width: 200
       }, {
-        name: "Morada",
-        type: "text",
-        width: 200
-      }, {
-        name: "Data de Registo",
-        type: "date",
-        width: 100
-      }, {
-        name: "Localização",
+        name: "Country",
         type: "select",
         items: db.countries,
         valueField: "Id",
         textField: "Name"
+      }, {
+        name: "Married",
+        type: "checkbox",
+        title: "Is Married",
+        sorting: false
       }, {
         type: "control",
         modeSwitchButton: false,
@@ -379,7 +384,6 @@
       },
 
       rowRenderer: function rowRenderer(item) {
-
         var $photo = (0, _jquery2.default)("<div>").addClass("pr-20").append((0, _jquery2.default)('<a>').addClass('avatar avatar-lg').attr('href', 'javascript:void(0)').append((0, _jquery2.default)("<img>").attr("src", item.picture.medium)));
         var $info = (0, _jquery2.default)("<div>").addClass("media-body").append((0, _jquery2.default)("<p>").append((0, _jquery2.default)("<strong>").text(item.name.first.capitalize() + " " + item.name.last.capitalize()))).append((0, _jquery2.default)("<p>").text("Location: " + item.location.city.capitalize() + ", " + item.location.street)).append((0, _jquery2.default)("<p>").text("Email: " + item.email)).append((0, _jquery2.default)("<p>").text("Phone: " + item.phone)).append((0, _jquery2.default)("<p>").text("Cell: " + item.cell));
 

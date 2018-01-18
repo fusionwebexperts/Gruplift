@@ -1,0 +1,66 @@
+/**** MARGINS ****/
+
+$margin-large: 20%;
+$no-margin: 0%;
+$margin-medium: 10%;
+$margin-small: 5%;
+$margin-xlarge: 25%;
+
+
+/**** BREAKPOINTS ****/ 
+
+$HDPLUS: 1600px; 
+$HD: 1380px;
+$MOBILETAB: 1200px;
+$MOBILEPHONE: 991px;
+$MOBILELOW: 767px;
+
+
+button {
+    color: $cor-acesssoria;
+    background-color: #ccc;
+    -webkit-appearance: caret !important;
+    width: 100% !important;    
+}
+
+/***QUERY CONTAINER ***/
+
+
+.container-fluid {
+    margin-left: $margin-medium + $margin-small !important;
+       @media screen and (min-width: $HDPLUS) 
+        {
+         margin-left: $margin-medium + $margin-small !important;  
+         width:75% !important;
+        }
+       @media screen and (min-width: $HD + 1) and (max-width: $HDPLUS - 1) 
+        {
+         margin-left:  $margin-medium + $margin-small !important; 
+         width: 75% !important;
+        }
+       @media screen and (min-width: $MOBILETAB) and (max-width: $HD) 
+        {
+         margin-left: $margin-large !important; 
+         width: 75% !important;
+        }
+        @media screen and (min-width: $MOBILEPHONE + 1) and (max-width: $MOBILETAB - 1) 
+        {    
+         margin-left: $margin-small !important; 
+        }
+        @media screen and (min-width:$MOBILELOW + 1) and ( max-width: $MOBILEPHONE) 
+        {
+         margin-left: $margin-small !important; 
+        }
+        @media screen and (max-width: $MOBILELOW) 
+        {
+         margin-left: $no-margin !important; 
+        }
+}
+
+
+.site-menubar-fold .site-menu>.site-menu-item>a .site-menu-title 
+{
+    visibility: visible !important;
+    opacity: 1 !important;
+    color:rgba(117,117,117,.9) !important;
+}
