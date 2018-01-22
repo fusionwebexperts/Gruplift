@@ -1,0 +1,17 @@
+@import 'stylesheet';
+
+$panel-margin: 0px;
+
+.page-content {
+    padding-bottom: $panel-margin !important;
+}
+.panel {
+    margin-bottom: $panel-margin !important;
+}
+@media (min-width: 1200px)
+{
+.col-xl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 47% !important;
+}}

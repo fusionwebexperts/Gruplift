@@ -74,6 +74,7 @@
     }
   });
 
+  
   // Example Basic
   // -------------------
   (function () {
@@ -176,7 +177,7 @@
             d.resolve(response.value);
           });
 
-          return d.promise();\
+          return d.promise();
         }
       },
 
