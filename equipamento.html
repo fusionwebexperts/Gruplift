@@ -15,8 +15,8 @@
     <!-- Estilos fusion -->
     <link rel="stylesheet" href="scss/ficha.css">
     <link rel="stylesheet" href="scss/dashboard.css">
-    <link rel="stylesheet" href="scss/equipamentos.css">
-
+    <link rel="stylesheet" href="scss/clientes.css">
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-extend.min.css">
@@ -30,16 +30,24 @@
     <link rel="stylesheet" href="vendor/slidepanel/slidePanel.css">
     <link rel="stylesheet" href="vendor/flag-icon-css/flag-icon.css">
     <link rel="stylesheet" href="vendor/waves/waves.css">
-        <link rel="stylesheet" href="vendor/jquery-wizard/jquery-wizard.css">
-        <link rel="stylesheet" href="vendor/formvalidation/formValidation.css">
-        <link rel="stylesheet" href="vendor/bootstrap-datepicker/bootstrap-datepicker.css">
-        <link rel="stylesheet" href="assets/examples/css/tables/jsgrid.css">
+        <link rel="stylesheet" href="vendor/floatthead/jquery.floatThead.css">
+        <link rel="stylesheet" href="assets/examples/css/tables/floatthead.css">
     
     
     <!-- Fonts -->
     <link rel="stylesheet" href="fonts/material-design/material-design.min.css">
     <link rel="stylesheet" href="fonts/brand-icons/brand-icons.min.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    
+    <!--[if lt IE 9]>
+    <script src="vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="vendor/media-match/media.match.min.js"></script>
+    <script src="vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
     <!-- Scripts -->
     <script src="vendor/breakpoints/breakpoints.js"></script>
     <script>
@@ -317,36 +325,99 @@
             </div>
         </div>
       </div>
-    
-</div>   
-<!-- Template <--></-->
-<div class="page-content container-fluid container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <!-- Panel Basic -->
-            <div class="panel">
-              <header class="panel-heading">
-                <h3 class="panel-title">Equipamentos de #NOMECLIENTE </h3>
-              </header>
-              <div class="panel-body">
-                <div id="exampleStaticData"></div>
-              </div>
-            </div>
-        <!-- End Panel Basic -->
-          </div>
-<!-- Output --> 
-<div id="content-placeholder"></div>
 
-          </div></div>
-        
-          
-          
-              <footer class="site-footer">       
+    <!-- Page -->
+    <div class="page">
+      <div class="page-header">
+        <h1 class="page-title">Equipamentos do Cliente ID#1</h1>
+      </div>
+      <div class="page-content">
+
+        <!-- Panel Example 1 -->
+        <div class="panel">
+          <header class="panel-heading">
+            <h3 class="panel-title">
+              Equipamentos
+            </h3>
+          </header>
+          <div class="panel-body">
+            <div class="example table-responsive">
+              <table class="table table-striped table-bordered" data-plugin="floatThead">
+                <thead>
+                  <tr>
+                    <th>Contrato  </th>
+                    <th>Data de Registo</th>
+                    <th>Morada</th>
+                    <th>Características</th>
+                    <th>Manutenção</th>
+                    <th>Inspecção</th>
+                  </tr>
+                </thead>
+                <tbody aria-relevant="all" aria-live="polite">
+                  <tr class="odd">
+                    
+                    <td>
+                      <h5>Carlos Neves</h5>
+                      <small>Nº 12345678 | Indigo</small>
+                    </td>
+                    <td>
+                      <div class="">25-10-2017</div>
+                    </td>
+                      <td>
+                      <h5>Ílhavo, Aveiro</h5>
+                      <small>Avenida Principal, 3830-222</small>
+                    </td>
+                    <td>
+                      <h5>Ver ficha</h5>
+                    </td>
+                    <td>
+                       <h5>Ver ficha</h5>
+                    </td>
+                    <td>
+                      <h5>Ver ficha</h5>
+                    </td>
+                  </tr>
+                  <tr class="even">
+
+                     <td>
+                      <h5>Carlos Neves</h5>
+                      <small>Nº 12345678 | Indigo</small>
+                    </td>
+                    <td>
+                      <div class="">25-10-2017</div>
+                    </td>
+                      <td>
+                      <h5>Ílhavo, Aveiro</h5>
+                      <small>Avenida Principal, 3830-222</small>
+                    </td>
+                    <td>
+                      <h5>Ver ficha</h5>
+                    </td>
+                    <td>
+                     <h5>Ver ficha</h5>
+                    </td>
+                     <td>
+                      <h5>Ver ficha</h5>
+                    </td>
+                  </tr>             
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- End Panel Example 1 -->
+
+     
+      </div>
+    </div>
+    <!-- End Page -->
+
+
+    <!-- Footer -->
+      <footer class="site-footer">       
       <div class="site-footer-legal">© 2018. made by Webexperts</div>
-    </footer>
+    </footer>   
     <!-- Core  -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/funcionarios.js"></script>
     <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/popper-js/umd/popper.min.js"></script>
@@ -357,62 +428,13 @@
     <script src="vendor/asscrollable/jquery-asScrollable.js"></script>
     <script src="vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
     <script src="vendor/waves/waves.js"></script>
-    <script src="js/handlebars.min.js"></script>
-
     
     <!-- Plugins -->
     <script src="vendor/switchery/switchery.js"></script>
     <script src="vendor/intro-js/intro.js"></script>
     <script src="vendor/screenfull/screenfull.js"></script>
     <script src="vendor/slidepanel/jquery-slidePanel.js"></script>
-        <script src="vendor/chartist/chartist.min.js"></script>
-        <script src="vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script>
-        <script src="vendor/jvectormap/jquery-jvectormap.min.js"></script>
-        <script src="vendor/jvectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
-        <script src="vendor/matchheight/jquery.matchHeight-min.js"></script>
-        <script src="vendor/peity/jquery.peity.min.js"></script>
-    
-    <!-- Scripts -->
-    <script src="js/Component.js"></script>
-    <script src="js/Plugin.js"></script>
-    <script src="js/Base.js"></script>
-    <script src="js/Config.js"></script>
-    
-    <script src="assets/js/Section/Menubar.js"></script>
-    <script src="assets/js/Section/GridMenu.js"></script>
-    <script src="assets/js/Section/Sidebar.js"></script>
-    <script src="assets/js/Section/PageAside.js"></script>
-    <script src="assets/js/Plugin/menu.js"></script>
-    
-    <script src="js/config/colors.js"></script>
-    <script src="assets/js/config/tour.js"></script>
-            <script src="assets/examples/js/tables/jsgrid-db.js"></script>
-        <script src="assets/examples/js/tables/jsgrid.js"></script>
-    <script>Config.set('assets', 'assets');</script>
-    
-    <!-- Page -->
-  
-    
-        <script src="assets/examples/js/dashboard/v1.js"></script>
-        <script src="vendor/babel-external-helpers/babel-external-helpers.js"></script>
-    <script src="vendor/jquery/jquery.js"></script>
-    <script src="vendor/popper-js/umd/popper.min.js"></script>
-    <script src="vendor/bootstrap/bootstrap.js"></script>
-    <script src="vendor/animsition/animsition.js"></script>
-    <script src="vendor/mousewheel/jquery.mousewheel.js"></script>
-    <script src="vendor/asscrollbar/jquery-asScrollbar.js"></script>
-    <script src="vendor/asscrollable/jquery-asScrollable.js"></script>
-    <script src="vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
-    <script src="vendor/waves/waves.js"></script>
-    
-    <!-- Plugins -->
-    <script src="vendor/switchery/switchery.js"></script>
-    <script src="vendor/intro-js/intro.js"></script>
-    <script src="vendor/screenfull/screenfull.js"></script>
-    <script src="vendor/slidepanel/jquery-slidePanel.js"></script>
-        <script src="vendor/jsgrid/jsgrid.js"></script>
-        <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
-        <script src="vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+        <script src="vendor/floatthead/jquery.floatThead.js"></script>
     
     <!-- Scripts -->
     <script src="js/Component.js"></script>
@@ -435,11 +457,18 @@
     <script src="js/Plugin/asscrollable.js"></script>
     <script src="js/Plugin/slidepanel.js"></script>
     <script src="js/Plugin/switchery.js"></script>
+        <script src="js/Plugin/floatthead.js"></script>
     
-        <script src="assets/examples/js/tables/jsgrid-db.js"></script>
-        <script src="assets/examples/js/tables/jsgrid.js"></script>
-          
-          
-          
-          </body>
-          </html> 
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+        });
+      })(document, window, jQuery);
+    </script>
+    
+  </body>
+</html>
