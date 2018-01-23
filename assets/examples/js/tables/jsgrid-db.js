@@ -43,30 +43,36 @@
       "Morada": "Av. João Corte real nº231",
       "Data de registo": "20-15-2017",
       "Equipamentos": "<button class='equip'>Ver</button>",
+      "Mais Informação": "<button class='equip'>Ver</button>",
     },
     {
       "Nome": "Cliente Teste",
       "Morada": "Av. João Corte real nº231",
       "Data de registo": "20-15-2017",
       "Equipamentos": "<button class='equip'>Ver</button>",
+      "Mais Informação": "<button class='equip'>Ver</button>",
     },
     {
       "Nome": "Cliente Teste",
       "Morada": "Av. João Corte real nº231",
       "Data de registo": "20-15-2017",
       "Equipamentos": "<button class='equip'>Ver</button>",
+      "Mais Informação": "<button class='equip'>Ver</button>",
     },
     {
       "Nome": "Cliente Teste",
       "Morada": "Av. João Corte real nº231",
       "Data de registo": "20-15-2017",
       "Equipamentos": "<button class='equip'>Ver</button>",
+      "Mais Informação": "<button class='equip'>Ver</button>",
     },
     {
       "Nome": "Cliente Teste",
       "Morada": "Av. João Corte real nº231",
       "Data de registo": "20-15-2017",
       "Equipamentos": "<button class='equip'>Ver</button>",
+      "Mais Informação": "<button class='equip'>Ver</button>",
+
     }];
 
     
