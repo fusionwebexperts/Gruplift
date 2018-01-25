@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="scss/ficha.css">
     <link rel="stylesheet" href="scss/dashboard.css">
      <link rel="stylesheet" href="scss/prioridades.css">
+ 
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -315,155 +316,70 @@
             </ul>
             </div>      
             </div>
-        </div>
-      </div>
-    
-</div>   
+            </div>
+            </div>
+     
+  
 
 <!-- Template <-->
-  <div class="page">
+      <div class="page">
       <div class="page-header">
-        <h1 class="page-title">Novo Cliente #</h1>    
-      </div>
-      <div class="page-content container-fluid">
+        <h1 class="page-title">Novo Cliente</h1>
+        <h5>Espaço para adicionar novos clientes </h5> 
+        <div>
         <div class="row">
-          <div class="col-xl-6">
-            <!-- Panel Only Body -->
+          <div class="col-md-10">
+            <!-- Panel Static Labels -->
             <div class="panel">
-              <header class="panel-heading">
-                <h3 class="panel-title">
-                  Identificação
-                  <span class="panel-desc">
-                  Dados de gerais do cliente.
-                  </span>
-                </h3>
-              </header>
-              <div class="panel-body">
-                <table id="only-body-table" class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th>Nome</th>
-                      <th>Morada</th>
-                      <th>Data Registo</th>
-                      <th>Telefone</th>
-                      <th>Telemóvel</th>
-                      <th>E-mail</th>
-                    </tr>
-                  </thead>
-                  <tr>
-                    <td>Gruplift</td>
-                    <td><small>Rua Manuel Barbuda Nº52 3ºEsq</small></td>
-                    <td>20-01-2018</td>
-                    <td>+351 234 650 320</td>
-                    <td>+351 234 650 320</td>
-                    <td>teste@sapo.pt</td>
-                  </tr>
-                </table>
+              <div class="panel-heading"><br/><br/>              </div>
+              <div class="panel-body container-fluid">
+                <form autocomplete="off"> 
+                <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="inputGrid1" name="inputGrid1" placeholder="Nome"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="inputGrid2" name="inputGrid2" placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Telefone"/>
+                    </div>
+                    <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Telemóvel" />
+                    </div>
+                  </div>
+                      <div class="form-group form-material" data-plugin="formMaterial">
+                    <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Morada" />
+                     </div>
+                      <div class="form-group form-material row" data-plugin="formMaterial">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="inputGrid1" name="inputGrid1" placeholder="Usermame"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input type="password" class="form-control" id="inputGrid2" name="inputGrid2" placeholder="Password"
+                      />
+                    </div>
+                  </div>  
+
+                     <br/>
+                     <br/>
+                    <button type="button" class="btn btn-primary" style="float:right;">Submeter</button>                   
+                </form>
               </div>
             </div>
-            </div>
-          <div class="col-xl-6">
-              <div class="panel">
-              <header class="panel-heading">
-                <h3 class="panel-title">
-                  Equipamentos
-                  <span class="panel-desc">
-                  Listagem dos equipamentos do Cliente.
-                  </span>
-                </h3>
-              </header>
-              <div class="panel-body">
-                <table id="only-body-table" class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th>Nº Contrato</th>
-                      <th>Morada</th>
-                      <th>Data Registo</th>
-                      <th>Info adicional</th>
-                    </tr>
-                  </thead>
-                  <tr>
-                    <td>155552</td>
-                    <td>Rua Manuel Barbuda Nº52 3ºEsq</td>
-                    <td>20-01-2018</td>
-                    <td>Ver</td>
-                  </tr>
-                   <tr>
-                    <td>123412</td>
-                    <td>Rua do Entroncamento</td>
-                    <td>20-01-2018</td>
-                    <td>Ver</td>
-                  </tr>
-                  <tr>
-                    <td>123432</td>
-                    <td>Rua Manuel Barbuda Nº52 3ºEsq</td>
-                    <td>20-01-2018</td>
-                    <td>Ver</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <!-- End Panel Only Body -->
+            <!-- End Panel Static Labels -->
           </div>
-        </div>
-         </div>
-        <div class="page-content container-fluid">
-        <div class="row">
-          <div class="col-xl-6">
-            <!-- Panel Only Body -->
-            <div class="panel">
-              <header class="panel-heading">
-                <h3 class="panel-title">
-                  Serviços
-                  <span class="panel-desc">
-                  Listagem total dos serviços relativos a cliente ID#.
-                </span>
-                </h3>
-              </header>
-              <div class="panel-body">
-                <table id="only-body-table" class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th>Nº Contrato</th>
-                      <th>Morada</th>
-                      <th>Data Prevista</th>
-                      <th>Data Execução</th>
-                      <th>Tipo</th>
-                      <th>Documento</th>
-                    </tr>
-                  </thead>
-                  <tr>
-                    <td>155552</td>
-                    <td><small>Rua Manuel Barbuda Nº52 3ºEsq</small></td>
-                    <td>20-01-2018</td>
-                    <td>20-01-2018</td>
-                    <td>Manutenção</td>
-                     <td>Ver</td>
-                  </tr>
-                     <tr>
-                    <td>155552</td>
-                    <td><small>Rua Manuel Barbuda Nº52 3ºEsq</small></td>
-                    <td>20-01-2018</td>
-                    <td>20-01-2018</td>
-                    <td>Manutenção</td>
-                     <td>Ver</td>
-                  </tr>
-                     <tr>
-                    <td>155552</td>
-                    <td><small>Rua Manuel Barbuda Nº52 3ºEsq</small></td>
-                    <td>20-01-2018</td>
-                    <td>20-01-2018</td>
-                    <td>Manutenção</td>
-                     <td>Ver</td>
-                  </tr>
-                </table>
-              </div>
+           </div>
             </div>
             </div>
-         
-        </div>
-      </div>
-  </div>
+            </div>
+          
+          
     <footer class="site-footer">       
       <div class="site-footer-legal">© 2018. made by Webexperts</div>
     </footer>
