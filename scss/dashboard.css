@@ -63,9 +63,18 @@ a:active {
   color: #ffffff;
 }
 
+.site-navbar .navbar-header .hamburger .hamburger-bar, .site-navbar .navbar-header .hamburger::after, .site-navbar .navbar-header .hamburger::before {
+  background-color: #000000 !important;
+}
+
 .sub-title {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+
+.site-menubar-fold .site-menu > .site-menu-item > a .site-menu-title {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .site-navbar {

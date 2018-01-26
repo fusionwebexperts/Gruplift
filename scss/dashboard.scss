@@ -6,12 +6,17 @@ $height_form: 100vh;
 $width_form: 100vw;
 $container: 8%;
 $border-sub: 1px solid #ccc;
-
+.site-navbar .navbar-header .hamburger .hamburger-bar, .site-navbar .navbar-header .hamburger::after, .site-navbar .navbar-header .hamburger::before {
+    background-color: $cor-secundaria !important;
+}
 .sub-title {
 border-top: $border-sub;
 border-bottom: $border-sub;
 }
-
+.site-menubar-fold .site-menu>.site-menu-item>a .site-menu-title {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
 .site-navbar {
     background-color: $cor-acesssoria  !important;
 }
