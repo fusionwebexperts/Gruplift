@@ -9,6 +9,9 @@ $border-sub: 1px solid #ccc;
 .site-navbar .navbar-header .hamburger .hamburger-bar, .site-navbar .navbar-header .hamburger::after, .site-navbar .navbar-header .hamburger::before {
     background-color: $cor-secundaria !important;
 }
+.table td, .table th {
+    padding: .25rem !important;}
+    
 .sub-title {
 border-top: $border-sub;
 border-bottom: $border-sub;
